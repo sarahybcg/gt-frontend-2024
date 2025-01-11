@@ -29,6 +29,8 @@ npm -v
 ```
 Si no están instalados, por favor, dirígete a [Node.js Official Website](https://nodejs.org/) y sigue las instrucciones.
 
+---
+
 ## Instalación
 
 Sigue estos pasos para instalar y configurar el proyecto en tu máquina local:
