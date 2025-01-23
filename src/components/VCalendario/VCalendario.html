@@ -1,0 +1,103 @@
+<div class="calendario-container">
+  <!-- Timeline -->
+  <div class="timeline">
+    <!-- Time Labels -->
+    <div class="time-labels">
+      <div
+        v-for="(time, index) in timeSlots"
+        :key="time"
+        class="time-label"
+        :style="{ top: `${(index * 100) / (timeSlots.length - 1)}%` }"
+      >
+        {{ time }}
+      </div>
+    </div>
+
+    <!-- Grid Lines -->
+    <div ref="timelineRef" class="grid-lines" @click="handleTimelineClick">
+      <div
+        v-for="(_, index) in timeSlots"
+        :key="index"
+        class="grid-line"
+        :style="{ top: `${(index * 100) / (timeSlots.length - 1)}%` }"
+      ></div>
+
+      <!-- Schedule Blocks -->
+      <div
+        v-for="block in blocks"
+        :key="block.id"
+        :class="['schedule-block', colorMap[block.type]]"
+        :style="{
+            left: `${block.position}%`,
+            top: `${block.start}%`,
+            height: `${block.end - block.start}%`,
+          }"
+        @click="setSelectedBlock(block)"
+      >
+        <div class="block-content">
+          <div class="block-title">{{ block.title }}</div>
+          <div class="block-description">{{ block.description }}</div>
+        </div>
+        <div
+          class="block-resize block-resize-top"
+          @mousedown="(e) => handleMouseDown(e, block, 'start')"
+        ></div>
+        <div
+          class="block-resize block-resize-bottom"
+          @mousedown="(e) => handleMouseDown(e, block, 'end')"
+        ></div>
+      </div>
+    </div>
+
+    <!-- Details Panel -->
+    <VueDraggable
+      v-if="selectedBlock"
+      :handle="'.handle'"
+      class="details-panel"
+    >
+      <div class="details-content">
+        <div class="details-header handle">
+          <h3>Detalles del Evento</h3>
+          <button @click="setSelectedBlock(null)" class="close-button">
+            <X />
+          </button>
+        </div>
+        <input
+          v-model="selectedBlock.title"
+          placeholder="Título del evento"
+          class="details-input"
+        />
+        <textarea
+          v-model="selectedBlock.description"
+          placeholder="Descripción"
+          class="details-textarea"
+        ></textarea>
+        <div class="details-actions">
+          <button @click="saveBlockDetails" class="save-details-button">
+            Guardar Cambios
+          </button>
+          <button @click="deleteBlock(selectedBlock.id)" class="delete-button">
+            <Trash />
+          </button>
+        </div>
+      </div>
+    </VueDraggable>
+
+    <!-- Legend -->
+    <div class="legend">
+      <div
+        v-for="[type, color] in Object.entries(colorMap)"
+        :key="type"
+        class="legend-item"
+      >
+        <button
+          :class="['legend-button', { 'selected': selectedColor === type }]"
+          @click="setSelectedColor(type)"
+        >
+          {{ type }}
+        </button>
+        <div :class="['color-indicator', color]"></div>
+      </div>
+    </div>
+  </div>
+</div>
