@@ -1,0 +1,65 @@
+.table-container {
+    padding: 2rem;
+    background-color: #f8f5f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .campaign-table {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    overflow: hidden;
+  }
+  
+  .campaign-table th,
+  .campaign-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .campaign-table th {
+    background-color: white;
+    font-weight: 600;
+    color: #111827;
+  }
+  
+  .campaign-table td {
+    color: #374151;
+  }
+  
+  .campaign-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .campaign-table tbody tr:hover {
+    background-color: #f9fafb;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #374151;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .icon-btn:hover {
+    color: #111827;
+  }
+  
