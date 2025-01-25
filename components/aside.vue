@@ -60,9 +60,16 @@
 
 const list = ref([
     { name: 'Dashboard',src:'/admin/dashboard', },
-    { name: 'Productos', src: '/admin/productos' },
-    { name: 'Categorías', src: '/admin/productoscategoria' },
-    { name: 'SubCategorías',src: '/admin/subproductoscategoria',},
+    { name: 'Finanzas', src:'/admin/productos', },
+    { name: 'Compra', src:'/admin/productos', },
+    { name: 'Inventario', src:'/admin/productos', },
+    { name: 'Ventas', src:'/admin/productos', },
+    { name: 'Recursos humano', src:'/admin/productos', },
+    { name: 'Restaurantes', src:'/admin/productos', },
+    { name: 'Transporte', src:'/admin/productos', },
+    { name: 'Hotel', src:'/admin/productos', },
+    { name: 'Atracciones', src:'/admin/productos', },
+
 ])
 
 
