@@ -1,0 +1,22 @@
+<div class="Resumen">
+    <h2>Resumen de la Orden</h2>
+    <div class="info">
+      <p><strong>Información del Proveedor</strong></p>
+      <p>{{ proveedor }}</p>
+      <p>{{ ubicacion }}</p>
+      <p>{{ tipo }}</p>
+    </div>
+    <div class="productos">
+      <p><strong>Lista de Productos</strong></p>
+      <p v-for="producto in productos" :key="producto.nombre">
+        {{ producto.nombre }} - {{ producto.cantidad }} unidades - ${{ producto.precio }}
+      </p>
+    </div>
+    <div class="total">
+      <p><strong>Totales</strong></p>
+      <p>Subtotal: ${{ subtotal }}</p>
+      <p>Impuestos: ${{ impuestos }}</p>
+      <p>Total: ${{ total }}</p>
+    </div>
+  </div>
+  
