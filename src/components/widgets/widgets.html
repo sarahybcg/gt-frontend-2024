@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget Card</title>
+    <link rel="stylesheet" href="widgets.css">
+    
+</head>
+<body>
+    <div class="column">
+    <div class="widget-card">
+        <p>Utilidad Neta</p>
+        <h2>$14.000.000</h2>
+    </div>
+
+    <div class="widget-card widget-card-alt">
+        <p>Deudas Pendientes</p>
+        <h2>$50.000.000</h2>
+    </div>
+
+</div>
+<div class="column">
+    <div class="widget-graph">
+        <h3>Tendencia de Flujo de Caja</h3>
+        <p>Flujo de caja neto en los últimos 6 meses</p>
+        <hr>
+        <canvas id="salesChart"></canvas>
+        <button id="downloadChart">Descargar</button>
+    </div>
+
+    <div class="widget-graph">
+        <h3>Vista Previa de Ingresos y Gastos</h3>
+        <p>Ingresos vs Costos en los últimos 6 meses</p>
+        <hr>
+        <canvas id="incomeExpenseChart"></canvas>
+        <button id="downloadChart">Vista Completa</button>
+    </div>
+</div>
+</body>
+</html>
