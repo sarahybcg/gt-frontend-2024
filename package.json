@@ -12,7 +12,7 @@
     "lucide-vue-next": "^0.473.0",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
-    "vuedraggable": "^2.24.3"
+    "vuedraggable": "^4.1.0"
   },
   "devDependencies": {
     "@types/vue": "^2.0.0",

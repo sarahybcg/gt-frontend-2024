@@ -1,18 +1,21 @@
 <template>
+  <TarjetaCurso />
+  <VCalendario />
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import TarjetaCurso from '../components/tarjetacurso/tarjetacurso.vue'; 
+import VCalendario from '../components/VCalendario/VCalendario.vue'; 
 
 export default defineComponent({
-  name: 'HomeView',
   components: {
-    HelloWorld,
+    VCalendario,
+    TarjetaCurso,
   },
 });
 </script>
