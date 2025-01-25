@@ -1,73 +1,111 @@
-# Tienda Online
+ 
+# 🌴 AMERICAN CARIBBEAN TRAVEL
 
+Guía de instalación, ejecución y configuración de la aplicación.
 
-## Setup
-Pasos para la instalacion 
-Se ubican dentro de la carpeta de la aplicacion
-y se ejecuta el siguiente comando para sastifacer las despendencias pueden usar el comando de su preferencia NPM PNPM YARN BUN:
+---
 
-```bash
-# npm
-npm install
+## 🚀 Setup
 
-# pnpm
-pnpm install
+### Instalación de dependencias
+Sigue estos pasos para instalar las dependencias del proyecto. Ubícate dentro de la carpeta de la aplicación y utiliza el gestor de paquetes de tu preferencia:
 
-# yarn
-yarn install
+- **Con NPM**:
+  ```bash
+  npm install
+  ```
 
-# bun
-bun install
-```
+- **Con PNPM**:
+  ```bash
+  pnpm install
+  ```
 
-## Ejecutar el server
+- **Con Yarn**:
+  ```bash
+  yarn install
+  ```
 
-Utiliza cualquiera de estos comando `http://localhost:3000`:
+- **Con Bun**:
+  ```bash
+  bun install
+  ```
 
-```bash
-# npm
-npm run dev
+---
 
-# pnpm
-pnpm dev
+## 🖥️ Ejecutar el servidor
 
-# yarn
-yarn dev
+Para iniciar el servidor en modo desarrollo y acceder a la aplicación en `http://localhost:3000`, utiliza cualquiera de los siguientes comandos según el gestor de paquetes que prefieras:
 
-# bun
-bun run dev
-```
+- **Con NPM**:
+  ```bash
+  npm run dev
+  ```
 
-## Production
+- **Con PNPM**:
+  ```bash
+  pnpm dev
+  ```
 
-No utilizar:
+- **Con Yarn**:
+  ```bash
+  yarn dev
+  ```
 
-```bash
-# npm
-npm run build
+- **Con Bun**:
+  ```bash
+  bun run dev
+  ```
 
-# pnpm
-pnpm build
+---
 
-# yarn
-yarn build
+## ⚠️ Producción
 
-# bun
-bun run build
-```
+### **No utilizar los siguientes comandos para construir el proyecto:**
 
-Locally preview production build:
+- **Con NPM**:
+  ```bash
+  npm run build
+  ```
 
-```bash
-# npm
-npm run preview
+- **Con PNPM**:
+  ```bash
+  pnpm build
+  ```
 
-# pnpm
-pnpm preview
+- **Con Yarn**:
+  ```bash
+  yarn build
+  ```
 
-# yarn
-yarn preview
+- **Con Bun**:
+  ```bash
+  bun run build
+  ```
 
-# bun
-bun run preview
-```
+---
+
+## 🔍 Vista previa de producción
+
+Si deseas realizar una vista previa de la versión de producción de forma local, utiliza uno de los siguientes comandos:
+
+- **Con NPM**:
+  ```bash
+  npm run preview
+  ```
+
+- **Con PNPM**:
+  ```bash
+  pnpm preview
+  ```
+
+- **Con Yarn**:
+  ```bash
+  yarn preview
+  ```
+
+- **Con Bun**:
+  ```bash
+  bun run preview
+  ``` 
+ 
+ 
