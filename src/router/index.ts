@@ -1,21 +1,37 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import BudgetCreationView from '../views/BudgetCreationView.vue'
+import AddExpensesView from '../views/AddExpensesView.vue'
+import PaymentRegistrationView from '../views/PaymentRegistrationView.vue'
+import CreateCampaignView from '../views/CreateCampaignView.vue'
+import AddLeadView from '../views/AddLeadView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: HomeView,
+      path: '/budget-creation',
+      name: 'budget-creation',
+      component: BudgetCreationView,
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue'),
+      path: '/add-expenses',
+      name: 'add-expenses',
+      component: AddExpensesView,
+    },
+    {
+      path: '/payment-registration',
+      name: 'payment-registration',
+      component: PaymentRegistrationView,
+    },
+    {
+      path: '/create-campaign',
+      name: 'create-campaign',
+      component: CreateCampaignView,
+    },
+    {
+      path: '/add-lead',
+      name: 'add-lead',
+      component: AddLeadView,
     },
   ],
 })

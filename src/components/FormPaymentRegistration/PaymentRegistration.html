@@ -1,0 +1,42 @@
+<div class="create-campaign">
+  <h2>Registrar Pago</h2>
+  <form>
+    <div class="form-group">
+      <label for="client-provider">Cliente/Proveedor:</label>
+      <select id="client-provider" name="client-provider">
+        <option value="cliente1">Cliente 1</option>
+        <option value="cliente2">Cliente 2</option>
+        <option value="proveedor1">Proveedor 1</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="payment-date">Fecha de pago</label>
+      <input type="date" id="payment-date" name="payment-date" />
+    </div>
+
+    <div class="form-group">
+      <label for="payment-amount">Monto</label>
+      <input type="number" id="payment-amount" name="payment-amount" placeholder="Monto del pago" />
+    </div>
+
+    <div class="form-group">
+      <label for="payment-method">Método de Pago</label>
+      <select id="payment-method" name="payment-method">
+        <option value="efectivo">Efectivo</option>
+        <option value="tarjeta">Tarjeta</option>
+        <option value="transferencia">Transferencia</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="payment-notes">Notas Adicionales</label>
+      <textarea id="payment-notes" name="payment-notes" placeholder="Notas adicionales" rows="4"></textarea>
+    </div>
+
+    <div class="form-actions">
+      <button type="button" class="cancel-button">Cancelar</button>
+      <button type="submit" class="save-button">Guardar</button>
+    </div>
+  </form>
+</div>
