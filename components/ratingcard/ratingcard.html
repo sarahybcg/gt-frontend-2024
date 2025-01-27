@@ -1,0 +1,28 @@
+<div class="rating-card">
+    <div class="card-left">
+      <div class="thumbnail"></div>
+    </div>
+    <div class="card-right">
+      <div class="content">
+        <h3 class="title">{{ title }}</h3>
+        <p class="description">{{ description }}</p>
+      </div>
+      <div class="card-bottom">
+        <div class="rating" @mouseleave="resetHoverRating">
+          <span 
+            v-for="star in 5" 
+            :key="star" 
+            class="star" 
+            :class="{ 'filled': star <= (hoverRating || rating) }"
+            @mouseover="setHoverRating(star)"
+            @click="setRating(star)"
+          >★</span>
+        </div>
+        <div class="price">${{ displayPrice }}</div>
+        <div class="quantity-control">
+          <button class="quantity-btn minus" @click="decreasePrice">−</button>
+          <button class="quantity-btn plus" @click="increasePrice">+</button>
+        </div>
+      </div>
+    </div>
+  </div>

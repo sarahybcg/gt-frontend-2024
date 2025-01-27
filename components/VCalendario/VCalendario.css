@@ -1,0 +1,232 @@
+.calendario-container {
+  border: 1px solid #bfdbfe;
+  width: 80%;
+  height: 80vh;
+  position: relative;
+  top: 100px;
+  left: 10%;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.timeline {
+  position: relative;
+  height: 100%;
+}
+
+.time-labels {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5rem;
+}
+
+.time-label {
+  position: absolute;
+  left: 0;
+  font-size: 0.875rem;
+  color: #2563eb;
+}
+
+.grid-lines {
+  position: absolute;
+  left: 5rem;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.grid-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #bfdbfe;
+}
+
+.schedule-block {
+  position: absolute;
+  width: 8%;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.schedule-block:hover {
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+.block-content {
+  padding: 0.5rem;
+  color: white;
+  font-size: 0.75rem;
+}
+
+.block-title {
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.block-description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.block-resize {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 0.25rem;
+  background-color: #1e40af;
+  cursor: ns-resize;
+}
+
+.block-resize-top {
+  top: 0;
+}
+
+.block-resize-bottom {
+  bottom: 0;
+}
+
+.details-panel {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 20rem;
+  max-height: calc(100% - 2rem);
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  border-radius: 0.5rem;
+}
+
+.details-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: move;
+}
+
+.details-header h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.close-button {
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.close-button:hover {
+  background-color: #dbeafe;
+}
+
+.details-input,
+.details-textarea {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #ebf5ff;
+  border-radius: 0.25rem;
+}
+
+.details-textarea {
+  height: 8rem;
+  resize: vertical;
+}
+
+.details-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.save-details-button,
+.delete-button {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  color: white;
+}
+
+.save-details-button {
+  background-color: #2563eb;
+}
+
+.save-details-button:hover {
+  background-color: #1d4ed8;
+}
+
+.delete-button {
+  background-color: #dc2626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-button:hover {
+  background-color: #b91c1c;
+}
+
+.legend {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-button {
+  width: 6rem;
+  height: 2rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.25rem;
+}
+
+.legend-button.selected {
+  ring: 2px;
+  ring-color: #2563eb;
+}
+
+.color-indicator {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.bg-red-500 {
+  background-color: #ef4444;
+}
+
+.bg-green-500 {
+  background-color: #10b981;
+}
+
+.bg-blue-600 {
+  background-color: #2563eb;
+}
+
+.bg-pink-500 {
+  background-color: #ec4899;
+}
+
+.handle {
+  cursor: move;
+}
