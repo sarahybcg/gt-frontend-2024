@@ -1,5 +1,5 @@
-<template src="./CreateCampaign.html"></template>
+<template src="./PaymentRegistration.html"></template>
 
 <script setup lang="ts">
-import './CreateCampaign.css'
+import './PaymentRegistration.css'
 </script>

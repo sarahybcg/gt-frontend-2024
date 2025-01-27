@@ -1,4 +1,3 @@
-<!-- filepath: /src/views/PaymentRegistrationView.vue -->
 <template>
   <div>
     <PaymentRegistration />
