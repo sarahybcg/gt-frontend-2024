@@ -1,0 +1,73 @@
+.widgets-container {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    width: 400px;
+    height: auto; 
+    gap: 1rem;
+    padding: 0.5rem; 
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  
+  .widget {
+    flex: 1;
+    min-width: 100px;
+    padding: 0.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .income {
+    background-color: #e6f4f1;
+  }
+  
+  .expenses {
+    background-color: #ffffff;
+  }
+  
+  .text-center {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .widget-title {
+    font-size: 0.9rem;
+    color: #666666;
+    margin: 0 0 1rem 0;
+    font-weight: 500;
+  }
+  
+  .widget-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+  }
+  
+  .image-container {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .widget-image {
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .widget-amount {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333333;
+  }
+  
