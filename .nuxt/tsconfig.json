@@ -5,9 +5,6 @@
       "nitropack/types": [
         "../node_modules/nitropack/types"
       ],
-      "nitropack/runtime": [
-        "../node_modules/nitropack/runtime"
-      ],
       "nitropack": [
         "../node_modules/nitropack"
       ],
@@ -43,9 +40,6 @@
       ],
       "nuxt": [
         "../node_modules/nuxt"
-      ],
-      "vite/client": [
-        "../node_modules/vite/client"
       ],
       "~": [
         ".."
@@ -83,6 +77,12 @@
       "public/*": [
         "../public/*"
       ],
+      "#build": [
+        "."
+      ],
+      "#build/*": [
+        "./*"
+      ],
       "#app": [
         "../node_modules/nuxt/dist/app"
       ],
@@ -99,16 +99,10 @@
         "./imports"
       ],
       "#app-manifest": [
-        "./manifest/meta/dev"
+        "./manifest/meta/57e7e8b9-7a1c-4e91-842e-0edcd2de2f3d.json"
       ],
       "#components": [
         "./components"
-      ],
-      "#build": [
-        "."
-      ],
-      "#build/*": [
-        "./*"
       ]
     },
     "esModuleInterop": true,
@@ -123,7 +117,7 @@
     "noUncheckedIndexedAccess": false,
     "forceConsistentCasingInFileNames": true,
     "noImplicitOverride": true,
-    "module": "ESNext",
+    "module": "preserve",
     "noEmit": true,
     "lib": [
       "ESNext",
@@ -157,10 +151,6 @@
     "../dist",
     "../node_modules",
     "../node_modules/nuxt/node_modules",
-    "../node_modules/@nuxtjs/tailwindcss/node_modules",
-    "../node_modules/@pinia/nuxt/node_modules",
-    "../node_modules/@nuxt/devtools/node_modules",
-    "../node_modules/@nuxt/telemetry/node_modules",
     "../node_modules/@nuxtjs/tailwindcss/runtime/server",
     "../node_modules/@nuxtjs/tailwindcss/dist/runtime/server",
     "../node_modules/@pinia/nuxt/runtime/server",
