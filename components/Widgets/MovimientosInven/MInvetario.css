@@ -1,0 +1,38 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+.MI {
+    background: rgb(173, 230, 229, .4);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgb(53, 81, 110);
+    width: 250px;
+    max-width: 500px;
+}
+
+.title {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 150;
+    margin: 0 0 0.5rem 0;
+}
+
+.total {
+    color: rgb(17, 24, 39);
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.ayer {
+    color: rgb(25, 27, 31);
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+    
+}
