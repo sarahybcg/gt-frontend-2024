@@ -1,0 +1,23 @@
+<div class="table-container">
+    <table class="user-table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>Fuente</th>
+          <th>Estado</th>
+          <th>Última Interacción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(user, index) in users" :key="index">
+          <td>{{ user.name }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.source }}</td>
+          <td>{{ user.status }}</td>
+          <td>{{ user.lastInteraction }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
