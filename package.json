@@ -18,7 +18,8 @@
     "vue": "latest",
     "vue-router": "latest",
     "lucide-vue-next": "^0.473.0", 
-    "vuedraggable": "^4.1.0"
+    "vuedraggable": "^4.1.0",
+    "chart.js": "^4.4.7"
   },
   "overrides": {
   "vue": "latest"
