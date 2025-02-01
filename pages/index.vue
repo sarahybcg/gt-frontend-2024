@@ -40,6 +40,7 @@
         <div class="grid-item"><ResumenOrden /></div>
         <div class="grid-item"><SEmpleados /></div>
         <div class="grid-item"><Tventas /></div>
+        <div class="grid-item"><widget /></div>
       </div>
     </section>
     
@@ -56,16 +57,19 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="ts"> 
 import { defineComponent } from 'vue'
 import VCalendario from '@/components/calendario/VCalendario.vue'
+//cards
 import tarjetacurso from '@/components/cards/tarjetacurso/tarjetacurso.vue'
 import ratingcard from '@/components/cards/ratingcard/ratingcard.vue'
+//tabless
 import BudgetTable from '@/components/datatables/BudgetTable/BudgetTable.vue'
 import CampaignTable from '@/components/datatables/CampaignTable/CampaignTable.vue'
 import PaymentTable from '@/components/datatables/PaymentTable/PaymentTable.vue'
 import SupplierTable from '@/components/datatables/SupplierTable/SupplierTable.vue'
 import UserTable from '@/components/datatables/UserTable/UserTable.vue'
+//widgets
 import CEmpleados from '@/components/Widgets/ContadorEmpleados/CEmpleados.vue'
 import MInventario from '@/components/Widgets/MovimientosInven/MInventario.vue'
 import NEmpleados from '@/components/Widgets/NewEmpleados/NEmpleados.vue'
@@ -74,11 +78,14 @@ import Rcostos from '@/components/Widgets/ResumenCostos/Rcostos.vue'
 import ResumenOrden from '@/components/Widgets/ResumenOrden/ResumenOrden.vue'
 import SEmpleados from '@/components/Widgets/SolicitudesEmpleos/SEmpleados.vue'
 import Tventas from '@/components/Widgets/TotalVentas/Tventas.vue'
+import widget from '@/components/Widgets/widget/widget.vue'
+//forms
 import AddExpenses from '@/components/forms/FormAddExpenses/AddExpenses.vue'
 import AddLead from '@/components/forms/FormAddLead/AddLead.vue'
 import BudgetCreation from '@/components/forms/FormBudgetCreation/BudgetCreation.vue'
 import CreateCampaign from '@/components/forms/FormCreateCampaign/CreateCampaign.vue'
 import PaymentRegistration from '@/components/forms/FormPaymentRegistration/PaymentRegistration.vue'
+import Widget from '@/components/Widgets/widget/widget.vue'
 
 export default defineComponent({
   components: {
@@ -102,7 +109,8 @@ export default defineComponent({
     AddLead,
     BudgetCreation,
     CreateCampaign,
-    PaymentRegistration
+    PaymentRegistration,
+    widget
   },
 })
 </script>

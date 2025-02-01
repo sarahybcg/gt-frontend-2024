@@ -1,16 +1,15 @@
-<template src="./widgets.html">
+<template src="./widget.html">
 
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import './widgets.js';
 
 export default defineComponent({
-  name: 'WidgetsComponent',
+  name: 'ComponenteWidget',
 });
 </script>
 
-<style src="./widgets.css">
+<style src="./widget.css">
 
 </style>

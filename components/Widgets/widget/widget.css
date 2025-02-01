@@ -1,0 +1,195 @@
+
+                                    /* Widget de Color Turquesa */
+
+.widget-turquesa div {   
+    background-image: linear-gradient(#9bd8e6 ,#04b1b8 50%,#a9dfeb 90%);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(25, 26, 25, 0.836);
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding:  20px;
+    position: relative;
+    width: 290px;
+    max-height: 85px;
+    margin: 25px;
+    text-align: left;
+    display: inline-block;
+    justify-content: left;
+}
+
+.widget-turquesa p {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    margin-top: 0;
+    color: #000000;
+}
+
+.widget-turquesa h2 {
+    color: #ffffff;
+    margin-top: 10;
+}
+
+.widget-turquesa h6 {
+    margin-top: 5px;
+    color: #136e10e0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.widget-gastos h6 {
+    margin-top: 5px;
+    color: #a11313;
+}
+
+.logo-widget-turquesa {    
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    left: 280px;
+    width: 35px;
+    height: 35px;
+    border-color: #ffffff;    
+}
+
+                    /* Animacion de Color */
+
+.widget-ingresos:hover{
+    background-image: linear-gradient(#04b1b8 ,#11c1c7 55%,#c7dee4 80%);
+    transition: all 1s ease-out;
+    p, h2{
+        color: #000000;
+    }
+    h6{
+        color: #168325;
+        font-size: 11px;
+        text-align: center;
+        text-shadow: 1px 3px #ffffff, 2px, 3px, #ffffff ;
+    }
+}
+
+.widget-gastos:hover{
+    background-image: linear-gradient(#04b1b8 ,#11c1c7 55%,#c7dee4 80%);
+    transition: all 1s ease-out;
+    p, h2{
+        color: #000000;
+    }
+    h6{
+        color: #a11313;
+        font-size: 11px;
+        text-align: center;
+        text-shadow: 1px 3px #ffffff, 2px, 3px, #ffffff ;
+    }
+}
+
+.widget-beneficio:hover{
+    background-image: linear-gradient(#04b1b8 ,#11c1c7 55%,#c7dee4 80%);
+    transition: all 1s ease-out;
+    p, h2{
+        color: #000000;
+    }
+    h6{
+        color: #168325;
+        font-size: 11px;
+        text-align: center;
+        text-shadow: 1px 3px #ffffff, 2px, 3px, #ffffff ;
+    }
+}
+
+
+
+                            /* Animacion de Color en los widget color Turquesa */ 
+
+
+.widget-blue div {
+    background-image: linear-gradient(#125199 35%, #34ccee);
+    opacity: 0.9,3;
+    box-shadow: 0 10px 8px rgba(4, 43, 129, 0.840);
+    border: 1px solid #ffffff;
+    border-radius: 26px;
+    padding: 20px;
+    position: relative;
+    width: 210px;
+    max-height: 100%;
+    display: inline-block;
+    margin: 25px;
+}
+
+.widget-blue h2 {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    color: #e8e9fd;
+    text-align: left;
+    margin-top: 0px;
+    font-size: 18px;
+}
+
+.widget-blue p {
+    color: #0a0f35;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.widget-mejor-publicacion h3 {
+    color: #0a0f35;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.widget-mejor-publicacion p{
+    color: #0a0f35;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: 100;
+}
+
+.logo-widget-blue {    
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    left: 215px;
+    width: 20px;
+    height: 23px;
+    border-color: #ffffff;
+}
+
+                    /* Animacion de Color en los widget color Azul */ 
+
+.widget-seguidores:hover{
+    background-image: linear-gradient(#125199 , #125199);
+    transition: all 1s ease-out;
+    p {
+        color: #ffffff;
+    }
+}
+
+.widget-total-interaciones:hover{
+    background-image: linear-gradient(#125199 , #125199);
+    transition: all 1s ease-out;
+    p {
+        color: #ffffff;
+    }
+}
+
+.widget-publicaciones-del-mes:hover{
+    background-image: linear-gradient(#125199 , #125199);
+    transition: all 1s ease-out;
+    p {
+        color: #ffffff;
+    }
+}
+
+.widget-mejor-publicacion:hover{
+    background-image: linear-gradient(#125199 , #125199);
+    transition: all 1s ease-out;
+    p, h3{
+        color: #ffffff;
+    }
+}
+
