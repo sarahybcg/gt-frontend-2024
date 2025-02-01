@@ -1,111 +1,89 @@
 <template>
-  <div class="">
-    <Carousel />
-    <div class="p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-      <div v-for="(item, index) in productos" :key="index"
-      class="max-w-sm bg-white border border-gray-500/60 rounded-lg shadow-xl">
-      <a href="#">
-        <img class="p-8 rounded-t-lg" src="../public/img/apple-watch.png" alt="product image" />
-      </a>
-      <div class="px-5 pb-5">
-        <a href="#">
-        <h5 class="text-xl font-semibold tracking-tight text-gray-900">{{ item.title }}</h5>
-        </a>
-        <div class="flex items-center mt-2.5 mb-5">
-        <div class="flex items-center space-x-1 rtl:space-x-reverse">
-          <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor" viewBox="0 0 22 20">
-          <path
-            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-          </svg>
-          <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor" viewBox="0 0 22 20">
-          <path
-            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-          </svg>
-          <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor" viewBox="0 0 22 20">
-          <path
-            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-          </svg>
-          <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor" viewBox="0 0 22 20">
-          <path
-            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-          </svg>
-          <svg class="w-4 h-4 text-gray-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor" viewBox="0 0 22 20">
-          <path
-            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-          </svg>
-        </div>
-        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded ms-3">5.0</span>
-        </div>
-        <div class="flex items-center justify-between">
-        <span class="text-3xl font-bold text-gray-900">${{ item.price }}</span>
-        <a href="#"
-          class="text-white bg-green-600 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-          Comprar</a>
-        <a href="#"
-          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-          Añadir al carrito</a>
-        </div>
-      </div>
-      </div> 
-    </div>
-
+  <div>
+    <h1>CALENDARIO</h1> 
+    <VCalendario />
+  </div> 
+  <div>
+    <h1>TARJETA CURSO</h1> 
+    <tarjetacurso /> 
+  </div>
+  <div>
+    <h1>TARJETA RATING</h1> 
+    <ratingcard />
+  </div>
+  <div>
+    <h1>GRAFICOS</h1>  
+  </div>
+  <div>
+    <h1>TABLAS</h1>  
+    <BudgetTable />
+    <CampaignTable />
+    <PaymentTable />
+    <SupplierTable />
+    <UserTable />
+  </div>
+  <div>
+    <h1>WIDGETS</h1>  
+    <CEmpleados />
+    <MInventario />
+    <NEmpleados />
+    <RPendientes />
+    <Rcostos />
+    <ResumenOrden />
+    <SEmpleados />
+    <Tventas /> 
   </div>
 </template>
-<script setup>
-definePageMeta({
-  layout: "inicio",
-});
-import { ref } from 'vue';
 
-const productos = ref([
-  {
-    id: "LDDD-00001",
-    name: "DEll Lapto 2080 FULL-Gamer",
-    description: "Computadora de mesa ",
-    prici: "100",
-    currency: "USD",
-    url_img: "http://drive/ing/pc.png",
-    category: "Computacion"
+<script lang="ts">
+import { defineComponent } from 'vue'
+import VCalendario from '@/components/VCalendario/VCalendario.vue'
+import tarjetacurso from '@/components/tarjetacurso/tarjetacurso.vue';  
+import ratingcard from '@/components/ratingcard/ratingcard.vue'; 
+import BudgetTable from '@/components/datatables/BudgetTable/BudgetTable.vue';
+import CampaignTable from '@/components/datatables/CampaignTable/CampaignTable.vue';
+import PaymentTable from '@/components/datatables/PaymentTable/PaymentTable.vue';
+import SupplierTable from '@/components/datatables/SupplierTable/SupplierTable.vue';
+import UserTable from '@/components/datatables/UserTable/UserTable.vue'; 
+import CEmpleados from '@/components/Widgets/ContadorEmpleados/CEmpleados.vue';
+import MInventario from '@/components/Widgets/MovimientosInven/MInventario.vue';
+import NEmpleados from '@/components/Widgets/NewEmpleados/NEmpleados.vue';
+import RPendientes from '@/components/Widgets/ReservasPendientes/RPendientes.vue';
+import Rcostos from '@/components/Widgets/ResumenCostos/Rcostos.vue';
+import ResumenOrden from '@/components/Widgets/ResumenOrden/ResumenOrden.vue';
+import SEmpleados from '@/components/Widgets/SolicitudesEmpleos/SEmpleados.vue';
+import Tventas from '@/components/Widgets/TotalVentas/Tventas.vue';
+
+export default defineComponent({
+  components: {
+    VCalendario,
+    tarjetacurso,
+    ratingcard,
+    BudgetTable,
+    CampaignTable,
+    PaymentTable,
+    SupplierTable, 
+    UserTable,
+    CEmpleados,
+    MInventario,
+    NEmpleados,
+    RPendientes,
+    Rcostos,
+    ResumenOrden,
+    SEmpleados,
+    Tventas
   },
-
-  {
-    id: "LDDD-00003",
-    name: "DEll Lapto 2080 FULL-Gamer",
-    description: "Computadora de mesa ",
-    prici: "100",
-    currency: "USD",
-    url_img: "http://drive/ing/pc.png",
-    category: "Computacion"
-  },
-
-]);
-
-const getDato = async() => {
-  const res = await fetch('http://192.168.1.3:4000/api/product');
-  const data = await res.json();
-  console.log(data);
-}
-// const dato = await useProductStore().products;
-
-// const productos = useProductStore().products;
-// Mounted( async() => {
-//   await useProductStore().getProducts();
-
-// });
-// await useProductStore().getProducts();
-
-// onBeforeUpdate(async () => {
-//   await useProductStore().getProducts();
-// });
-onMounted(async () => {
-  // await useProductStore().getProducts();
-
-});
-// await getDato();
-
+})
 </script>
+
+<style scoped>
+/* Aquí puedes agregar estilos para tu index.vue si lo necesitas */
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+p {
+  font-size: 1rem;
+  color: #555;
+}
+</style>
