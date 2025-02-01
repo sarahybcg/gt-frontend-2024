@@ -1,0 +1,64 @@
+.payment-registration {
+  width: 300px;
+  margin: 0 auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+.payment-registration label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Lobster', sans-serif; 
+  font-size: 14px; 
+  color: #000000; 
+}
+
+.payment-registration input,
+.payment-registration select,
+.payment-registration textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgb(95, 82, 82);
+}
+
+.payment-registration button {
+  padding: 8px 15px;
+  background-color: #6d70f7;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgb(90, 82, 82);
+  cursor: pointer;
+}
+
+.payment-registration .form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-registration .form-actions button {
+  margin-right: 10px;
+}
+
+.payment-registration .form-actions button:last-child {
+  margin-right: 0;
+}
+
+.payment-registration .form-actions button:first-child {
+  background-color: #ffffff;
+}
+
+.payment-registration select,
+.payment-registration input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgb(95, 82, 82);
+}

@@ -1,0 +1,90 @@
+.add-expenses {
+  width: 300px; 
+  margin: 0 auto;
+  padding: 15px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+.add-expenses label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Lobster', sans-serif; 
+  font-size: 14px; 
+  color: #000000; 
+}
+
+.add-expenses input,
+.add-expenses select,
+.add-expenses textarea {
+  width: 100%;
+  padding: 8px; 
+  margin-bottom: 10px; 
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgb(95, 82, 82);
+}
+
+.add-expenses button {
+  padding: 8px 15px; 
+  background-color: #6d70f7;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgb(90, 82, 82);
+  cursor: pointer;
+}
+
+.add-expenses .form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-expenses .form-actions button {
+  margin-right: 10px;
+}
+
+.add-expenses .form-actions button:last-child {
+  margin-right: 0;
+}
+
+.add-expenses .form-actions button:first-child {
+  background-color: #ffffff;
+}
+
+.add-expenses select,
+.add-expenses input[type="file"] {
+  width: 100%;
+  padding: 8px; 
+  margin-bottom: 10px; 
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgb(95, 82, 82);
+}
+
+.add-expenses input[type="file"] {
+  display: none;
+}
+
+.add-expenses .file-label {
+  display: inline-block;
+  padding: 8px 15px; 
+  background-color: #6d70f7;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 2px 4px rgb(90, 82, 82);
+  margin: 0 auto;
+  display: block;
+}
+
+.add-expenses .file-label:hover {
+  background-color: #5a5ed7;
+}
+
+.add-expenses .form-group.file-group {
+  text-align: center;
+  margin-bottom: 20px; 
+}
