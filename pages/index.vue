@@ -17,9 +17,14 @@
     </div>
     <section class="section">
       <h1>GRAFICOS</h1>
-      <!-- Aquí podrías agregar componentes o gráficos -->
+      <DoughnutChart />
+      <LineChart />
     </section>
-    
+    <section class="section">
+      <h1>ALERTAS</h1>
+      <AlertsPanelFinanzas />
+      <AlertsPanelMarketing />
+    </section>
     <section class="section">
       <h1>TABLAS</h1>
       <BudgetTable />
@@ -41,6 +46,7 @@
         <div class="grid-item"><SEmpleados /></div>
         <div class="grid-item"><Tventas /></div>
         <div class="grid-item"><widget /></div>
+        <div class="grid-item"><widgetss /></div>
       </div>
     </section>
     
@@ -78,15 +84,19 @@ import Rcostos from '@/components/Widgets/ResumenCostos/Rcostos.vue'
 import ResumenOrden from '@/components/Widgets/ResumenOrden/ResumenOrden.vue'
 import SEmpleados from '@/components/Widgets/SolicitudesEmpleos/SEmpleados.vue'
 import Tventas from '@/components/Widgets/TotalVentas/Tventas.vue'
-import widget from '@/components/Widgets/widget/widget.vue'
-//forms
+import widgetss from '@/components/Widgets/widget/widget.vue'
 import AddExpenses from '@/components/forms/FormAddExpenses/AddExpenses.vue'
 import AddLead from '@/components/forms/FormAddLead/AddLead.vue'
 import BudgetCreation from '@/components/forms/FormBudgetCreation/BudgetCreation.vue'
 import CreateCampaign from '@/components/forms/FormCreateCampaign/CreateCampaign.vue'
 import PaymentRegistration from '@/components/forms/FormPaymentRegistration/PaymentRegistration.vue'
-import Widget from '@/components/Widgets/widget/widget.vue'
-
+//Alert
+import AlertsPanelFinanzas from '@/components/Alerts/Alerts_panel_finanzas/AlertsPanelFinanzas.vue'
+import AlertsPanelMarketing from '@/components/Alerts/Alerts_panel_marketing/AlertsPanelMarketing.vue'
+//Graphics
+import DoughnutChart from '@/components/Graphics/Doughnut_Chart/DoughnutChart.vue'
+import LineChart from '@/components/Graphics/Line_chart/LineChart.vue' 
+ 
 export default defineComponent({
   components: {
     VCalendario,
@@ -110,7 +120,11 @@ export default defineComponent({
     BudgetCreation,
     CreateCampaign,
     PaymentRegistration,
-    widget
+    widgetss,
+    AlertsPanelFinanzas,
+    AlertsPanelMarketing,
+    DoughnutChart,
+    LineChart
   },
 })
 </script>
