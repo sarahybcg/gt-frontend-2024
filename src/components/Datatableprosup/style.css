@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.menu {
+    color: white;
+    height: 100px;
+}
+
+.menu__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.menu__links {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.search__box {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.search__box img {
+    width: 34px; 
+    height: 34px; 
+    margin-right: 10px;
+}
+
+.search__box input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 4px;
+    transition: border 0.3s;
+}
+
+.search__box input:focus {
+    border: 1px solid #ccc; 
+}
+
+.menu__link {
+    color: #6495ED;
+    text-decoration: none;
+    padding: 5px 10px; 
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.menu__item {
+    list-style: none;
+    position: relative;
+    height: auto; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    padding: 5px 10px; 
+}
+
+.menu__nesting {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu__item--show .menu__nesting {
+    display: block;
+}
+
+.saved, .archive, .options {
+    margin-left: 20px; 
+    display: flex;
+    align-items: center;
+}
+
+.container__table {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center; 
+}
+
+th {
+    padding: 30px 10px;
+    background-color: #f2f2f2;
+    font-weight: 500;
+    color: #333333;
+    border-bottom: solid 1px dimgray;
+}
+
+td {
+    padding-top: 30px; 
+    padding-bottom: 30px; 
+    border-bottom: solid 1px dimgray;
+
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+tbody tr {
+    cursor: pointer;
+}
