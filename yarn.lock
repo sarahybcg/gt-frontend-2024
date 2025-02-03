@@ -362,6 +362,30 @@
     "@eslint/core" "^0.10.0"
     levn "^0.4.1"
 
+"@fortawesome/fontawesome-common-types@6.7.2":
+  version "6.7.2"
+  resolved "https://registry.npmjs.org/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.7.2.tgz"
+  integrity sha512-Zs+YeHUC5fkt7Mg1l6XTniei3k4bwG/yo3iFUtZWd/pMx9g3fdvkSK9E0FOC+++phXOka78uJcYb8JaFkW52Xg==
+
+"@fortawesome/fontawesome-svg-core@^6.7.2", "@fortawesome/fontawesome-svg-core@~1 || ~6":
+  version "6.7.2"
+  resolved "https://registry.npmjs.org/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-6.7.2.tgz"
+  integrity sha512-yxtOBWDrdi5DD5o1pmVdq3WMCvnobT0LU6R8RyyVXPvFRd2o79/0NCuQoCjNTeZz9EzA9xS3JxNWfv54RIHFEA==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "6.7.2"
+
+"@fortawesome/free-solid-svg-icons@^6.7.2":
+  version "6.7.2"
+  resolved "https://registry.npmjs.org/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-6.7.2.tgz"
+  integrity sha512-GsBrnOzU8uj0LECDfD5zomZJIjrPhIlWU82AHwa2s40FKH+kcxQaBvBo3Z4TxyZHIyX8XTDxsyA33/Vx9eFuQA==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "6.7.2"
+
+"@fortawesome/vue-fontawesome@^3.0.8":
+  version "3.0.8"
+  resolved "https://registry.npmjs.org/@fortawesome/vue-fontawesome/-/vue-fontawesome-3.0.8.tgz"
+  integrity sha512-yyHHAj4G8pQIDfaIsMvQpwKMboIZtcHTUvPqXjOHyldh1O1vZfH4W03VDPv5RvI9P6DLTzJQlmVgj9wCf7c2Fw==
+
 "@humanfs/core@^0.19.1":
   version "0.19.1"
   resolved "https://registry.npmjs.org/@humanfs/core/-/core-0.19.1.tgz"
@@ -391,9 +415,9 @@
   integrity sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==
 
 "@iconify/collections@^1.0.496":
-  version "1.0.512"
-  resolved "https://registry.npmjs.org/@iconify/collections/-/collections-1.0.512.tgz"
-  integrity sha512-u6ESZ/1QlUEgjPLqBQf6oj1zeTQH0jPJTA5N+wG8DjBlBc1G598WDHtpAS33ePS7FvF41Xd4DA+HlWqc/p4IZQ==
+  version "1.0.513"
+  resolved "https://registry.npmjs.org/@iconify/collections/-/collections-1.0.513.tgz"
+  integrity sha512-TFhZhKjnaO2rj+4Ut5ix8CR7ZbHaRn318918OT/j4xZXghxTkZ8V2JsNsdcMOyJXFto16UFInPAM+QqaGFZPMw==
   dependencies:
     "@iconify/types" "*"
 
@@ -994,14 +1018,6 @@
   resolved "https://registry.npmjs.org/@tsconfig/node22/-/node22-22.0.0.tgz"
   integrity sha512-twLQ77zevtxobBOD4ToAtVmuYrpeYUh3qh+TEp+08IWhpsrIflVHqQ1F1CiPxQGL7doCdBIOOCF+1Tm833faNg==
 
-"@types/eslint@>=8.0.0":
-  version "9.6.1"
-  resolved "https://registry.npmjs.org/@types/eslint/-/eslint-9.6.1.tgz"
-  integrity sha512-FXx2pKgId/WyYo2jXw63kk7/+TY7u7AziEJxJAnSFzHlqTAS3Ync6SvgYAN/k4/PQpnnVuzoMuVnByKK2qp0ag==
-  dependencies:
-    "@types/estree" "*"
-    "@types/json-schema" "*"
-
 "@types/estree@*", "@types/estree@^1.0.0", "@types/estree@^1.0.6", "@types/estree@1.0.6":
   version "1.0.6"
   resolved "https://registry.npmjs.org/@types/estree/-/estree-1.0.6.tgz"
@@ -1014,7 +1030,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/json-schema@*", "@types/json-schema@^7.0.15":
+"@types/json-schema@^7.0.15":
   version "7.0.15"
   resolved "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.15.tgz"
   integrity sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==
@@ -2834,6 +2850,11 @@ flatted@^3.2.9, flatted@^3.3.2:
   resolved "https://registry.npmjs.org/flatted/-/flatted-3.3.2.tgz"
   integrity sha512-AiwGJM8YcNOaobumgtng+6NHuOqC3A7MixFeDafM3X9cIUM+xUXoS5Vfgf+OihAYe20fxqNM9yPBXJzRtZ/4eA==
 
+font-awesome@^4.7.0:
+  version "4.7.0"
+  resolved "https://registry.npmjs.org/font-awesome/-/font-awesome-4.7.0.tgz"
+  integrity sha512-U6kGnykA/6bFmg1M/oT9EkFeIYv7JlX3bozwQJWiiLz6L0w3F5vBVPxHlwyX/vtNq1ckcpRKOB9f2Qal/VtFpg==
+
 foreground-child@^3.1.0:
   version "3.3.0"
   resolved "https://registry.npmjs.org/foreground-child/-/foreground-child-3.3.0.tgz"
@@ -2852,16 +2873,7 @@ fresh@~0.5.2, fresh@0.5.2:
   resolved "https://registry.npmjs.org/fresh/-/fresh-0.5.2.tgz"
   integrity sha512-zJ2mQYM18rEFOudeV4GShTGIQ7RbzA7ozbU9I/XBpm7kqgMywgmylMwXHxZJmkVoYkna9d2pVXVXPdYTP9ej8Q==
 
-fs-extra@^11.1.0:
-  version "11.3.0"
-  resolved "https://registry.npmjs.org/fs-extra/-/fs-extra-11.3.0.tgz"
-  integrity sha512-Z4XaCL6dUDHfP/jT25jJKMmtxvuwbkrD1vNSMFlo9lNLY2c5FHYSQgHPRZUjAB26TpDEoW9HCOgplrdbaPV/ew==
-  dependencies:
-    graceful-fs "^4.2.0"
-    jsonfile "^6.0.1"
-    universalify "^2.0.0"
-
-fs-extra@^11.2.0:
+fs-extra@^11.1.0, fs-extra@^11.2.0:
   version "11.3.0"
   resolved "https://registry.npmjs.org/fs-extra/-/fs-extra-11.3.0.tgz"
   integrity sha512-Z4XaCL6dUDHfP/jT25jJKMmtxvuwbkrD1vNSMFlo9lNLY2c5FHYSQgHPRZUjAB26TpDEoW9HCOgplrdbaPV/ew==
@@ -2898,9 +2910,9 @@ function-bind@^1.1.2:
   integrity sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==
 
 fuse.js@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.npmjs.org/fuse.js/-/fuse.js-7.0.0.tgz"
-  integrity sha512-14F4hBIxqKvD4Zz/XjDc3y94mNZN6pRv3U13Udo0lNLCWRBUsrMv2xwcF/y/Z5sV6+FQW+/ow68cHpm4sunt8Q==
+  version "7.1.0"
+  resolved "https://registry.npmjs.org/fuse.js/-/fuse.js-7.1.0.tgz"
+  integrity sha512-trLf4SzuuUxfusZADLINj+dE8clK1frKdmqiJNb1Es75fmI5oY6X2mxLVUciLLjxqw/xr72Dhy+lER6dGd02FQ==
 
 gensync@^1.0.0-beta.2:
   version "1.0.0-beta.2"
@@ -3306,9 +3318,9 @@ image-meta@^0.2.1:
   integrity sha512-K6acvFaelNxx8wc2VjbIzXKDVB0Khs0QT35U6NkGfTdCmjLNcO2945m7RFNR9/RPVFm48hq7QPzK8uGH18HCGw==
 
 import-fresh@^3.2.1:
-  version "3.3.0"
-  resolved "https://registry.npmjs.org/import-fresh/-/import-fresh-3.3.0.tgz"
-  integrity sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==
+  version "3.3.1"
+  resolved "https://registry.npmjs.org/import-fresh/-/import-fresh-3.3.1.tgz"
+  integrity sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==
   dependencies:
     parent-module "^1.0.0"
     resolve-from "^4.0.0"
