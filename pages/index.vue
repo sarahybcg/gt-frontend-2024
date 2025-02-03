@@ -19,6 +19,7 @@
       <h1>GRAFICOS</h1>
       <DoughnutChart />
       <LineChart />
+      <GraphicsComponent />
     </section>
     <section class="section">
       <h1>ALERTAS</h1>
@@ -47,6 +48,7 @@
         <div class="grid-item"><Tventas /></div>
         <div class="grid-item"><widget /></div>
         <div class="grid-item"><widgetss /></div>
+        <div class="grid-item"><WidgetsComponent /></div>
       </div>
     </section>
     
@@ -90,12 +92,15 @@ import AddLead from '@/components/forms/FormAddLead/AddLead.vue'
 import BudgetCreation from '@/components/forms/FormBudgetCreation/BudgetCreation.vue'
 import CreateCampaign from '@/components/forms/FormCreateCampaign/CreateCampaign.vue'
 import PaymentRegistration from '@/components/forms/FormPaymentRegistration/PaymentRegistration.vue'
+import WidgetsComponent from '@/components/Widgets/widgets/widgets.vue'
+
 //Alert
 import AlertsPanelFinanzas from '@/components/Alerts/Alerts_panel_finanzas/AlertsPanelFinanzas.vue'
 import AlertsPanelMarketing from '@/components/Alerts/Alerts_panel_marketing/AlertsPanelMarketing.vue'
 //Graphics
 import DoughnutChart from '@/components/Graphics/Doughnut_Chart/DoughnutChart.vue'
 import LineChart from '@/components/Graphics/Line_chart/LineChart.vue' 
+import GraphicsComponent from '@/components/Graphics/graphicsIngresovsGasto/graphicsIngresovsGasto.vue'
  
 export default defineComponent({
   components: {
@@ -121,10 +126,12 @@ export default defineComponent({
     CreateCampaign,
     PaymentRegistration,
     widgetss,
+    WidgetsComponent,
     AlertsPanelFinanzas,
     AlertsPanelMarketing,
     DoughnutChart,
-    LineChart
+    LineChart,
+    GraphicsComponent 
   },
 })
 </script>

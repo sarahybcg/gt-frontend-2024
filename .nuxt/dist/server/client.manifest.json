@@ -7,12 +7,12 @@
     "module": true,
     "resourceType": "script"
   },
-  "C:/Users/PC/gt-frontend-2024/node_modules/nuxt/dist/app/entry.js": {
+  "C:/DEV/Turismo/gt-frontend-2024/node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
     "isEntry": true,
-    "file": "C:/Users/PC/gt-frontend-2024/node_modules/nuxt/dist/app/entry.js"
+    "file": "C:/DEV/Turismo/gt-frontend-2024/node_modules/nuxt/dist/app/entry.js"
   }
 }
