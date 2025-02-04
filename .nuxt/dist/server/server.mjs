@@ -1,1 +1,0 @@
-export { default } from "file:///C:/DEV/Turismo/gt-frontend-2024/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"

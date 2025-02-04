@@ -21,3 +21,5 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+# Ignorar la carpeta .nuxt (generada por Nuxt.js)
+.nuxt/
