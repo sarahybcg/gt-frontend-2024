@@ -168,9 +168,25 @@ Este proyecto utiliza las siguientes tecnologías y herramientas:
 
 ---
 
-## Contribuciones
+## Convenciones de Nombres en Nuxt/Vue
 
-Si deseas contribuir a este proyecto, sigue estos pasos:
+
+| Tipo de Archivo            | Convención                          | Ejemplo Correcto           |
+|----------------------------|------------------------------------|----------------------------|
+| **📂 Directorios**         | kebab-case                         | `components/`, `pages/`    |
+| **📜 Componentes**         | PascalCase                         | `Navbar.vue`, `UserCard.vue` |
+| **📄 Páginas**             | kebab-case                         | `index.vue`, `user-profile.vue` |
+| **🖼 Layouts**            | PascalCase                         | `Default.vue`, `Admin.vue` |
+| **🛒 Store (Vuex/Pinia)**  | kebab-case                         | `auth.js`, `user.js`       |
+| **🔗 Composables**        | useCamelCase                       | `useAuth.js`, `useUser.js` |
+| **🛠 Middleware**         | kebab-case                         | `auth.js`, `admin-auth.js` |
+| **🔌 Plugins**           | kebab-case                         | `axios.js`, `vuetify.js`   |
+| **🛠 Utils**             | kebab-case                         | `format-date.js`, `api-helpers.js` |
+| **🎨 Estilos (CSS/SCSS)** | kebab-case                         | `main.scss`, `theme-dark.scss` |
+
+🔹 **Nota:** Los **componentes** y **layouts** van en **PascalCase**, mientras que las demás estructuras siguen **kebab-case**.
+
+## Contribuciones
 
 1. Haz un fork del repositorio.
 2. Crea una rama para tu funcionalidad (`git checkout -b feature/nueva-funcionalidad`).
