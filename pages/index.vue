@@ -57,6 +57,11 @@
         <div class="grid-item"><AddLead /></div>
         <div class="grid-item"><BudgetCreation /></div>
         <div class="grid-item"><CreateCampaign /></div>
+        <div class="grid-item"><CreateEmployee1 /></div>
+        <div class="grid-item"><CreateEmployee2 /></div>
+        <div class="grid-item"><NewPost /></div>
+        <div class="grid-item"><NewReport /></div>
+        <div class="grid-item"><UpdateEmployee /></div>
         <div class="grid-item"><PaymentRegistration /></div>
       </div>
     </section>
@@ -89,6 +94,11 @@ import AddExpenses from '@/components/forms/FormAddExpenses/AddExpenses.vue'
 import AddLead from '@/components/forms/FormAddLead/AddLead.vue'
 import BudgetCreation from '@/components/forms/FormBudgetCreation/BudgetCreation.vue'
 import CreateCampaign from '@/components/forms/FormCreateCampaign/CreateCampaign.vue'
+import CreateEmployee1 from '@/components/forms/FormCreateEmployee1/CreateEmployee1.vue'
+import CreateEmployee2 from '@/components/forms/FormCreateEmployee2/CreateEmployee2.vue'
+import NewPost from '@/components/forms/FormNewPost/NewPost.vue'
+import NewReport from '@/components/forms/FormNewReport/NewReport.vue'
+import UpdateEmployee from '@/components/forms/FormUpdateEmployee/UpdateEmployee.vue'
 import PaymentRegistration from '@/components/forms/FormPaymentRegistration/PaymentRegistration.vue'
 //Alert
 import AlertsPanelFinanzas from '@/components/Alerts/Alerts_panel_finanzas/AlertsPanelFinanzas.vue'
@@ -96,6 +106,7 @@ import AlertsPanelMarketing from '@/components/Alerts/Alerts_panel_marketing/Ale
 //Graphics
 import DoughnutChart from '@/components/Graphics/Doughnut_Chart/DoughnutChart.vue'
 import LineChart from '@/components/Graphics/Line_chart/LineChart.vue' 
+
  
 export default defineComponent({
   components: {
@@ -119,6 +130,11 @@ export default defineComponent({
     AddLead,
     BudgetCreation,
     CreateCampaign,
+    CreateEmployee1,
+    CreateEmployee2,
+    NewPost,
+    NewReport,
+    UpdateEmployee,
     PaymentRegistration,
     widgetss,
     AlertsPanelFinanzas,

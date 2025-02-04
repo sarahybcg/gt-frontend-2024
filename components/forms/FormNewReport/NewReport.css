@@ -1,0 +1,78 @@
+.new-report {
+  width: 700px;
+  margin: 0 auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  text-align: left;
+}
+
+.new-report label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Lobster', sans-serif; 
+  font-size: 14px; 
+  color: #000000; 
+  text-align: left;
+  margin-left: 10px;
+}
+
+.new-report input,
+.new-report select,
+.new-report textarea {
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgb(95, 82, 82);
+}
+
+.new-report .data-group {
+  display: flex;
+  width: auto;
+  
+  gap: 5px;
+}
+
+.new-report .data-group div {
+  flex: 1;
+}
+
+.new-report button {
+  padding: 8px 15px;
+  background-color: #6d70f7;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgb(90, 82, 82);
+  cursor: pointer;
+}
+
+.new-report .form-actions {
+  display: flex;
+
+}
+
+.new-report .form-actions button:last-child {
+  margin-left: 20px;
+  background-color: #ffffff;
+}
+
+.new-report .form-actions button:first-child {
+
+  color: #ffffff;
+  background-color: #05078f;
+}
+
+.new-report select,
+.new-report input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgb(95, 82, 82);
+}

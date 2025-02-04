@@ -1,0 +1,42 @@
+<div class="new-report">
+  <form @submit.prevent="guardar">
+       <h2>Generar nuevo reporte</h2>
+        <p>Seleccione las métricas y el rango de tiempo para generar un nuevo reporte</p>
+
+    <div class="form-group">
+      <label for="report-type">Tipo de reporte</label>
+      <select id="report-type" name="report-type">
+        <option value="tal1">tal</option>
+        <option value="tal2">tal</option>
+        <option value="tal3">tal</option>
+      </select>
+    </div>
+
+<p>Rango de tiempo</p>
+    <div class="form-group">
+    <div class="data-group">
+      <div>
+      <label for="start-date">Fecha de inicio</label>
+      <input type="date" id="start-date" placeholder="Ciudad" required />
+      </div>
+      <div>
+      <label for="end-date">Fecha de fin</label>
+      <input type="date" id="end-date" placeholder="Número telefónico" required />
+      </div>
+    </div>
+  </div>
+
+    <div class="form-group">
+      <label for="export-format">Método de Pago</label>
+      <select id="export-format" name="export-format">
+        <option value="pdf">PDF</option>
+        <option value="excel">Excel</option>
+      </select>
+    </div>
+
+    <div class="form-actions">
+      <button type="button" @click="generar">Generar reporte </button>
+      <button type="submit">Enviar por correo</button>
+    </div>
+  </form>
+</div>
