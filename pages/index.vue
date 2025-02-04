@@ -56,16 +56,18 @@
         <div class="grid-item"><WidgetsComponent /></div>
       </div>
     </section>
-    
     <section class="section">
       <h1>FORMS</h1>
-      <div class="grid-container">
-        <div class="grid-item"><AddExpenses /></div>
-        <div class="grid-item"><AddLead /></div>
-        <div class="grid-item"><BudgetCreation /></div>
-        <div class="grid-item"><CreateCampaign /></div>
-        <div class="grid-item"><PaymentRegistration /></div>
-      </div>
+      <FormsFormCreateEmployee1 />
+      <FormsFormCreateEmployee2 />
+      <FormsFormNewPost />
+      <FormsFormNewReport />
+      <FormsFormUpdateEmployee />
+      <AddExpenses />
+      <AddLead />
+      <BudgetCreation />
+      <CreateCampaign />    
+      <PaymentRegistration />  
     </section>
   </div>
 </template>
@@ -97,13 +99,24 @@ import ResumenOrden from '@/components/Widgets/ResumenOrden/ResumenOrden.vue'
 import SEmpleados from '@/components/Widgets/SolicitudesEmpleos/SEmpleados.vue'
 import Tventas from '@/components/Widgets/TotalVentas/Tventas.vue'
 import widgetss from '@/components/Widgets/widget/widget.vue'
+import WidgetsComponent from '@/components/Widgets/widgets/widgets.vue'
+
+//FORMS
 import AddExpenses from '@/components/forms/FormAddExpenses/AddExpenses.vue'
 import AddLead from '@/components/forms/FormAddLead/AddLead.vue'
 import BudgetCreation from '@/components/forms/FormBudgetCreation/BudgetCreation.vue'
 import CreateCampaign from '@/components/forms/FormCreateCampaign/CreateCampaign.vue'
+import CreateEmployee1 from '@/components/forms/FormCreateEmployee1/CreateEmployee1.vue'
+import CreateEmployee2 from '@/components/forms/FormCreateEmployee2/CreateEmployee2.vue'
+import NewPost from '@/components/forms/FormNewPost/NewPost.vue'
+import NewReport from '@/components/forms/FormNewReport/NewReport.vue'
+import UpdateEmployee from '@/components/forms/FormUpdateEmployee/UpdateEmployee.vue'
 import PaymentRegistration from '@/components/forms/FormPaymentRegistration/PaymentRegistration.vue'
-import WidgetsComponent from '@/components/Widgets/widgets/widgets.vue'
-
+import { FormsFormCreateEmployee1 } from '#components'
+import { FormsFormCreateEmployee2 } from '#components'
+import { FormsFormNewPost } from '#components' 
+import { FormsFormNewReport } from '#components'
+import { FormsFormUpdateEmployee } from '#components'
 //Alert
 import AlertsPanelFinanzas from '@/components/Alerts/Alerts_panel_finanzas/AlertsPanelFinanzas.vue'
 import AlertsPanelMarketing from '@/components/Alerts/Alerts_panel_marketing/AlertsPanelMarketing.vue'
@@ -139,6 +152,11 @@ export default defineComponent({
     AddLead,
     BudgetCreation,
     CreateCampaign,
+    CreateEmployee1,
+    CreateEmployee2,
+    NewPost,
+    NewReport,
+    UpdateEmployee,
     PaymentRegistration,
     widgetss,
     WidgetsComponent,
@@ -151,7 +169,12 @@ export default defineComponent({
     datatableproduct,
     datatableprosup,
     datatablesupplier,
-    datatabletype
+    datatabletype,
+    FormsFormCreateEmployee1,
+    FormsFormCreateEmployee2,
+    FormsFormNewPost,
+    FormsFormNewReport,
+    FormsFormUpdateEmployee
   },
 })
 </script>
