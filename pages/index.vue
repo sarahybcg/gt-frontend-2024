@@ -33,6 +33,11 @@
       <PaymentTable />
       <SupplierTable />
       <UserTable />
+      <datatablepriority />
+      <datatableproduct />
+      <datatableprosup />
+      <datatablesupplier />
+      <datatabletype />
     </section>
     
     <section class="section">
@@ -77,6 +82,11 @@ import CampaignTable from '@/components/datatables/CampaignTable/CampaignTable.v
 import PaymentTable from '@/components/datatables/PaymentTable/PaymentTable.vue'
 import SupplierTable from '@/components/datatables/SupplierTable/SupplierTable.vue'
 import UserTable from '@/components/datatables/UserTable/UserTable.vue'
+import datatablepriority from '@/components/datatables/Datatablepriority/datatablepriority.vue'
+import datatableproduct from '@/components/datatables/Datatableproduct/datatableproduct.vue'
+import datatableprosup from '@/components/datatables/Datatableprosup/datatableprosup.vue'
+import datatablesupplier from '@/components/datatables/Datatablesupplier/datatablesupplier.vue'
+import datatabletype from '@/components/datatables/Datatabletype/datatabletype.vue'
 //widgets
 import CEmpleados from '@/components/Widgets/ContadorEmpleados/CEmpleados.vue'
 import MInventario from '@/components/Widgets/MovimientosInven/MInventario.vue'
@@ -101,6 +111,11 @@ import AlertsPanelMarketing from '@/components/Alerts/Alerts_panel_marketing/Ale
 import DoughnutChart from '@/components/Graphics/Doughnut_Chart/DoughnutChart.vue'
 import LineChart from '@/components/Graphics/Line_chart/LineChart.vue' 
 import GraphicsComponent from '@/components/Graphics/graphicsIngresovsGasto/graphicsIngresovsGasto.vue'
+import Datatablepriority from '@/components/datatables/Datatablepriority/datatablepriority.vue'
+import Datatableproduct from '@/components/datatables/Datatableproduct/datatableproduct.vue'
+import Datatableprosup from '@/components/datatables/Datatableprosup/datatableprosup.vue'
+import Datatablesupplier from '@/components/datatables/Datatablesupplier/datatablesupplier.vue'
+import Datatabletype from '@/components/datatables/Datatabletype/datatabletype.vue'
  
 export default defineComponent({
   components: {
@@ -131,7 +146,12 @@ export default defineComponent({
     AlertsPanelMarketing,
     DoughnutChart,
     LineChart,
-    GraphicsComponent 
+    GraphicsComponent,
+    datatablepriority,
+    datatableproduct,
+    datatableprosup,
+    datatablesupplier,
+    datatabletype
   },
 })
 </script>
