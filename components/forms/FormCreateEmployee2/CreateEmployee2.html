@@ -1,0 +1,27 @@
+<div class="personal-data">
+  <form @submit.prevent="guardar">
+
+    <div class="form-group">
+    <div class="data-group">
+      <div>
+      <label for="city">Ciudad</label>
+      <input type="text" id="city" placeholder="Ciudad" required />
+      </div>
+      <div>
+      <label for="phone">Número telefónico</label>
+      <input type="text" id="phone" placeholder="Número telefónico" required />
+      </div>
+    </div>
+  </div>
+
+    <div class="form-group">
+      <label for="description">Descripción</label>
+    <textarea id="description" name="description" placeholder="Descripción" rows="4"></textarea>
+  </div>
+
+    <div class="form-actions">
+      <button type="button" @click="cancelar">Atrás</button>
+      <button type="submit">Siguiente</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,92 @@
+.update-employee {
+  width: 350px;
+  margin: 0 auto;
+  padding: 15px;
+  border: 1px solid rgb(159, 143, 250);
+  border-radius: 5px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  background-color: #f1fcff;
+  text-align: center;
+}
+
+.update-employee label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Lobster', sans-serif; 
+  font-size: 14px; 
+  color: #000000; 
+  text-align: left;
+  margin-left: 40px;
+}
+
+#image {
+height: 100px;
+}
+
+#editar {
+margin-top: 25%;
+text-align: center;
+width: 100px;
+}
+
+#description{
+width: 85%;
+}
+
+
+.update-employee input,
+.update-employee select,
+.update-employee textarea {
+  width: 70%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgb(95, 82, 82);
+}
+
+.update-employee .data-group {
+  display: flex;
+  gap: 10px;
+}
+
+.update-employee .data-group div {
+  flex: 1;
+}
+
+.update-employee button {
+  padding: 8px 15px;
+  background-color: #6d70f7;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 28px;
+  box-shadow: 0 2px 4px rgb(90, 82, 82);
+  cursor: pointer;
+}
+
+.update-employee .form-actions button {
+  margin-right: 10px;
+}
+
+.update-employee .form-actions button:last-child {
+  margin-right: 28px;
+}
+
+.update-employee .form-actions button:first-child {
+  background-color: #0003a8;
+  color: #ffffff;
+}
+
+.update-employee select,
+.update-employee input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgb(95, 82, 82);
+}
+
