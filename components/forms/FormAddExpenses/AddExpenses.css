@@ -1,10 +1,12 @@
 .add-expenses {
-  width: 300px; 
+  width: 500px; /* Ajusta el ancho */
   margin: 0 auto;
-  padding: 15px; 
+  padding: 20px; /* Ajusta el padding */
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
 }
 
 .add-expenses label {
@@ -87,4 +89,45 @@
 .add-expenses .form-group.file-group {
   text-align: center;
   margin-bottom: 20px; 
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cancel-button,
+.save-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.save-button {
+  background-color: #4CAF50;
+  color: white;
 }
