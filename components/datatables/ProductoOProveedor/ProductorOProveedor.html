@@ -1,0 +1,33 @@
+<template>
+    <div class="table-container">
+        <div class="header">
+            <input type="text" v-model="searchQuery" placeholder="Buscar por producto o proveedor" class="search-input" />
+            <select v-model="selectedCategoria" class="filter-select">
+                <option value="">Categoría</option>
+                <option value="Electronicos">Electrónicos</option>
+                <option value="Ropa">Ropa</option>
+                <option value="Alimentos">Alimentos</option>
+            </select>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Proveedor</th>
+                    <th>Producto</th>
+                    <th>Categoría</th>
+                    <th>Costo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(producto, index) in filteredProductos" :key="index">
+                    <td>{{ producto.fecha }}</td>
+                    <td>{{ producto.proveedor }}</td>
+                    <td>{{ producto.nombre }}</td>
+                    <td>{{ producto.categoria }}</td>
+                    <td>{{ producto.costo }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</template>

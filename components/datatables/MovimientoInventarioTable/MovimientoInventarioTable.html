@@ -1,0 +1,37 @@
+<template>
+    <div class="table-container">
+        <div class="header">
+            <input type="text" v-model="searchQuery" placeholder="Buscar producto" class="search-input" />
+            <select v-model="selectedCantidad" class="filter-select">
+                <option value="">Cantidad</option>
+                <option value="asc">Ascendente</option>
+                <option value="desc">Descendente</option>
+            </select>
+            <select v-model="selectedTipo" class="filter-select">
+                <option value="">Tipo</option>
+                <option value="Entrada">Entrada</option>
+                <option value="Salida">Salida</option>
+            </select>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Tipo</th>
+                    <th>Responsable</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(movimiento, index) in filteredMovimientos" :key="index">
+                    <td>{{ movimiento.fecha }}</td>
+                    <td>{{ movimiento.producto }}</td>
+                    <td>{{ movimiento.cantidad }}</td>
+                    <td>{{ movimiento.tipo }}</td>
+                    <td>{{ movimiento.responsable }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</template>

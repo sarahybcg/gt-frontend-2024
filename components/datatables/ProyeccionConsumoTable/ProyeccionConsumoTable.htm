@@ -1,0 +1,33 @@
+<template>
+    <div class="table-container">
+        <div class="header">
+            <input type="text" v-model="searchQuery" placeholder="Buscar producto" class="search-input" />
+            <select v-model="selectedPrioridad" class="filter-select">
+                <option value="">Prioridad</option>
+                <option value="Alta">Alta</option>
+                <option value="Media">Media</option>
+                <option value="Baja">Baja</option>
+            </select>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Producto</th>
+                    <th>Proyección Anterior</th>
+                    <th>Cantidad Real Consumida</th>
+                    <th>Desviación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(proyeccion, index) in filteredProyecciones" :key="index">
+                    <td>{{ proyeccion.fecha }}</td>
+                    <td>{{ proyeccion.producto }}</td>
+                    <td>{{ proyeccion.proyeccionAnterior }}</td>
+                    <td>{{ proyeccion.realConsumida }}</td>
+                    <td>{{ proyeccion.desviacion }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</template>

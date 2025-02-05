@@ -1,0 +1,41 @@
+<template>
+    <div class="table-container">
+        <div class="header">
+            <input type="text" v-model="searchQuery" placeholder="Buscar producto" class="search-input" />
+            <select v-model="selectedPrioridad" class="filter-select">
+                <option value="">Prioridad</option>
+                <option value="Alta">Alta</option>
+                <option value="Media">Media</option>
+                <option value="Baja">Baja</option>
+            </select>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad en Stock</th>
+                    <th>Cantidad Necesaria</th>
+                    <th>Proyección de Consumo</th>
+                    <th>Fecha Recomendada</th>
+                    <th>Prioridad</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(producto, index) in filteredProductos" :key="index">
+                    <td>{{ producto.nombre }}</td>
+                    <td>{{ producto.stock }}</td>
+                    <td>{{ producto.necesaria }}</td>
+                    <td>{{ producto.consumo }}</td>
+                    <td>{{ producto.fechaRecomendada }}</td>
+                    <td>{{ producto.prioridad }}</td>
+                    <td class="actions">
+                        <span @click="editarProducto(index)">✏️</span>
+                        <span @click="eliminarProducto(index)">🗑️</span>
+                        <span @click="verProducto(index)">🔍</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</template>
