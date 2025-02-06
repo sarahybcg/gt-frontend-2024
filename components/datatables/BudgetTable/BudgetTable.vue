@@ -1,4 +1,27 @@
-<template src="./BudgetTable.html"></template>
+<template>
+  <table class="budget-table">
+    <thead>
+      <tr>
+        <th>Departamento</th>
+        <th>Monto Asignado</th>
+        <th>Monto Gastado</th>
+        <th>% Utilizado</th>
+        <th>Estado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-for="(department, index) in departments" :key="index">
+        <td>{{ department.name }}</td>
+        <td>${{ formatNumber(department.assigned) }}</td>
+        <td>${{ formatNumber(department.spent) }}</td>
+        <td>{{ department.percentage }}%</td>
+        <td>{{ department.status }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</template>
 
 <script>
 export default {

@@ -1,4 +1,28 @@
-<template src="./PaymentTable.html"></template>
+<template>
+  <div class="table-container">
+    <table class="payment-table">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Descripción</th>
+          <th>Categoría</th>
+          <th>Monto</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(payment, index) in payments" :key="index">
+          <td>{{ payment.date }}</td>
+          <td>{{ payment.description }}</td>
+          <td>{{ payment.category }}</td>
+          <td>{{ formatCurrency(payment.amount) }}</td>
+          <td>{{ payment.status }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+</template>
 
 <script>
 export default {

@@ -1,7 +1,8 @@
 <template>
-  <nav class="bg-white absolute bottom-0 left-0 w-full p-4 flex justify-between items-center z-0">
+  <nav class="bg-white fixed  top-0 left-0 m-0 w-full p-4 flex justify-between items-center z-0">
     <!-- Nombre del módulo -->
-    <h1 class="text-2xl font-bold text-gray-800">{{ moduleName }}</h1>
+    
+    <h1 class="text-2xl font-bold text-gray-800 ml-[20%]">{{ moduleName }}</h1>
     
     <!-- Contenedor de iconos y buscador -->
     <div class="flex items-center space-x-4">

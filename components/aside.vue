@@ -117,11 +117,11 @@
     src: '/admin/finanzas', 
     icon: faDollarSign,
     submenu: [
-      { name: 'Presupuestos', src: '/admin/finanzas/1' }, 
-      { name: 'Control de Gastos', src: '/admin/finanzas/2' }, 
-      { name: 'Pagos y Cobros', src: '/admin/finanzas/3' },
-      { name: 'Analisis', src: '/admin/finanzas/4' },
-      { name: 'Reportes', src: '/admin/finanzas/5' }
+      { name: 'Presupuestos', src: '/admin/finanzas/presupuesto' }, 
+      { name: 'Control de Gastos', src: '/admin/finanzas/control_gasto' }, 
+      { name: 'Pagos y Cobros', src: '/admin/finanzas/pagos_cobros' },
+      { name: 'Analisis', src: '/admin/finanzas/analisis' },
+      { name: 'Reportes', src: '/admin/finanzas/reporte' }
     ]
   },
   { 
