@@ -1,4 +1,27 @@
-<template src="./SupplierTable.html"></template>
+<template>
+
+<div class="table-container">
+    <table class="supplier-table">
+      <thead>
+        <tr>
+          <th>Proveedor/Cliente</th>
+          <th>Monto</th>
+          <th>Fecha de Vencimiento</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(supplier, index) in suppliers" :key="index">
+          <td>{{ supplier.name }}</td>
+          <td>{{ formatCurrency(supplier.amount) }}</td>
+          <td>{{ supplier.dueDate }}</td>
+          <td>{{ supplier.status }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+</template>
 
 <script>
 export default {
