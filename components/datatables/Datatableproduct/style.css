@@ -1,21 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
-.DataTables-product {
-    font-family: "Poppins", serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.DataTables-product {
-    font-family: "Poppins", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", serif;
+    font-weight: 300;
 }
 
 .menu {
@@ -46,6 +39,7 @@
     display: flex;
     align-items: center;
     margin-right: auto;
+    margin-right: 40px; /* Añade más separación a la derecha */
 }
 
 .search__box img {
@@ -82,6 +76,7 @@
     border: 1px solid #ccc; 
     border-radius: 4px; 
     padding: 5px 10px; 
+    margin-right: 20px; /* Añadido para más separación */
 }
 
 .menu__nesting {
@@ -102,6 +97,25 @@
     align-items: center;
 }
 
+/* Estilos para los botones con imágenes */
+.menu_button, .table_button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer; /* Añade el cursor de puntero */
+}
+
+.menu_button img, .table_button img {
+    display: block;
+    transition: transform 0.3s, filter 0.3s; /* Añade una transición */
+}
+
+/* Efecto hover */
+.menu_button:hover img, .table_button:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+    filter: brightness(1.2); /* Aumenta el brillo de la imagen */
+}
+
 .container__table {
     width: 100%;
 }
@@ -110,6 +124,33 @@ table {
     width: 100%;
     border-collapse: collapse;
 }
+.table_button {
+    position: relative; /* Necesario para el posicionamiento del pseudo-elemento */
+}
+
+.table_button:hover::after {
+    content: attr(data-hover); /* Usamos el atributo data-hover para mostrar el mensaje */
+    position: absolute;
+    bottom: 120%; /* Posiciona el mensaje arriba del botón */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    white-space: nowrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    pointer-events: none; /* Elimina la interacción del mouse con el mensaje */
+    font-size: 0.9rem; /* Ajusta el tamaño de la fuente */
+}
+
+.table_button:hover::after {
+    opacity: 1; /* Hace visible el mensaje en hover */
+    transform: translateX(-50%) translateY(-5px); /* Añade un pequeño desplazamiento vertical para la animación */
+}
+
 
 th, td {
     padding: 8px;
@@ -128,7 +169,6 @@ td {
     padding-top: 30px; 
     padding-bottom: 30px; 
     border-bottom: solid 1px dimgray;
-
 }
 
 tr:nth-child(even) {
@@ -144,5 +184,65 @@ tbody tr {
 }
 
 tbody tr:hover {
-    background: dimgray;
+    background: rgb(214, 214, 214);
+}
+
+.table-container { 
+    padding: 2rem; 
+    background-color: #f8f5f5; 
+    min-height: 50vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: left; 
+} 
+
+.budget-table { 
+    background: white; 
+    border-radius: 16px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width: 100%; 
+    max-width: 1000px; 
+    border-collapse: collapse; 
+    overflow: hidden; 
+    font-size: 1.1rem; 
+} 
+
+.budget-table th, 
+.budget-table td { 
+    padding: 1.5rem; 
+    text-align: left; 
+    border-bottom: 1px solid #e5e7eb; 
+} 
+
+.budget-table th { 
+    background-color: #f9fafb; 
+    font-weight: 600; 
+    color: #111827; 
+    font-size: 1.2rem; 
+} 
+
+.budget-table td { 
+    color: #374151; 
+    font-weight: 500; 
+} 
+
+.budget-table tbody tr:last-child td { 
+    border-bottom: none; 
+} 
+
+.budget-table tbody tr:hover { 
+    background-color: #f3f4f6; 
+}
+
+@media (max-width: 768px) { 
+    .table-container { 
+        padding: 1rem; 
+    } 
+    .budget-table { 
+        font-size: 1rem; 
+    } 
+    .budget-table th, 
+    .budget-table td { 
+        padding: 1rem; 
+    } 
 }

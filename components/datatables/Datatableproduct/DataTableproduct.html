@@ -1,120 +1,124 @@
-<div class="Datatable-product">
-    <nav class="menu">
-        <section class="menu__container">
-            <ul class="menu__links">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="Datatable-product">
+        <nav class="menu">
+            <section class="menu__container">
+                <ul class="menu__links">
+                    <li class="search__box">
+                        <i class="bx bx-search icon"></i>
+                        <img src="./assets/search.svg" class="menu__search">
+                        <input type="text" placeholder="Buscar producto">
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Cantidad <img src="./assets/arrow.svg" class="menu-arrow"></a>
+                        <ul class="menu__nesting">
+                            <li class="menu__inside">
+                                <a href="#" class="menu__link menu-link--inside">Opción 1</a>
+                            </li>
+                            <li class="menu-inside">
+                                <a href="#" class="menu__link menu-link--inside">Opción 2</a>
+                            </li>
+                            <li class="menu-inside">
+                                <a href="#" class="menu__link menu-link--inside">Opción 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Estado <img src="./assets/arrow.svg" class="menu-arrow"></a>
+                        <ul class="menu__nesting">
+                            <li class="menu__inside">
+                                <a href="#" class="menu__link menu-link--inside">Opción 1</a>
+                            </li>
+                            <li class="menu-inside">
+                                <a href="#" class="menu__link menu-link--inside">Opción 2</a>
+                            </li>
+                            <li class="menu-inside">
+                                <a href="#" class="menu__link menu-link--inside">Opción 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="saved">
+                        <button class="menu_button"><img src="./assets/saved.svg" class="menu_saved"></button>
+                    </li>
+                    <li class="add">
+                        <button class="menu_button"><img src="./assets/add.svg" class="menu_add"></button>
+                    </li>
+                    <li class="options">
+                        <button class="menu_button"><img src="./assets/options.svg" class="menu_options"></button>
+                    </li>
+                </ul>
+            </section>
+        </nav>
 
-                <li class="search__box">
-                    <i class="bx bx-search icon"></i>
-                    <img src="./assets/search.svg" class="menu__search">
-                    <input type="text" placeholder="Buscar producto">
-                </li>
+        <div class="table-container">
+            <table class="budget-table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Costo</th>
+                        <th>Proveedor</th>
+                        <th>Fecha</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Producto 1</td>
+                        <td>21</td>
+                        <td>$21</td>
+                        <td>Proveedor 1</td>
+                        <td>21/01/2023</td>
+                        <td>Disponible</td>
+                        <td>
+                            <button class="table_button" data-hover="Más opciones"><img src="./assets/other.svg" class="table__other"></button>
+                            <button class="table_button" data-hover="Aprobar"><img src="./assets/check_p.svg" class="table__check_p"></button>
+                            <button class="table_button" data-hover="Desaprobar"><img src="./assets/check_n.svg" class="table__check_n"></button>
+                            <button class="table_button" data-hover="Editar"><img src="./assets/edit.svg" class="table__edit"></button>
 
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Cantidad <img src="./assets/arrow.svg" class="menu-arrow"></a>
-                    <ul class="menu__nesting">
-                        <li class="menu__inside">
-                            <a href="#" class="menu__link menu-link--inside">Opcion1</a>
-                        </li>
-                        <li class="menu-inside">
-                            <a href="#" class="menu__link menu-link--inside">Opcion2</a>
-                        </li>
-                        <li class="menu-inside">
-                            <a href="#" class="menu__link menu-link--inside">Opcion3</a>
-                        </li>
-                    </ul>
-                </li>
-    
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Estado <img src="./assets/arrow.svg" class="menu-arrow"></a>
-                    <ul class="menu__nesting">
-                        <li class="menu__inside">
-                            <a href="#" class="menu__link menu-link--inside">Opcion1</a>
-                        </li>
-                        <li class="menu-inside">
-                            <a href="#" class="menu__link menu-link--inside">Opcion2</a>
-                        </li>
-                        <li class="menu-inside">
-                            <a href="#" class="menu__link menu-link--inside">Opcion3</a>
-                        </li>
-                    </ul>
-                </li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Producto 2</td>
+                        <td>15</td>
+                        <td>$15</td>
+                        <td>Proveedor 2</td>
+                        <td>15/02/2023</td>
+                        <td>Disponible</td>
+                        <td>
+                            <button class="table_button" data-hover="Más opciones"><img src="./assets/other.svg" class="table__other"></button>
+                            <button class="table_button" data-hover="Aprobar"><img src="./assets/check_p.svg" class="table__check_p"></button>
+                            <button class="table_button" data-hover="Desaprobar"><img src="./assets/check_n.svg" class="table__check_n"></button>
+                            <button class="table_button" data-hover="Editar"><img src="./assets/edit.svg" class="table__edit"></button>
 
-                <li class="saved">
-                    <img src="./assets/saved.svg" class="menu_saved">
-                </li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Producto 3</td>
+                        <td>10</td>
+                        <td>$10</td>
+                        <td>Proveedor 3</td>
+                        <td>10/03/2023</td>
+                        <td>Disponible</td>
+                        <td>
+                            <button class="table_button" data-hover="Más opciones"><img src="./assets/other.svg" class="table__other"></button>
+                            <button class="table_button" data-hover="Aprobar"><img src="./assets/check_p.svg" class="table__check_p"></button>
+                            <button class="table_button" data-hover="Desaprobar"><img src="./assets/check_n.svg" class="table__check_n"></button>
+                            <button class="table_button" data-hover="Editar"><img src="./assets/edit.svg" class="table__edit"></button>
 
-                <li class="add">
-                    <img src="./assets/add.svg" class="menu_add">
-                </li>
-
-                <li class="options">
-                    <img src="./assets/options.svg" class="menu_options">
-                </li>
-    
-            </ul>
-        </section>
-
-    </nav>
-
-    <div class="container__table">
-        <table>
-            <thead>
-                <tr>
-                    <th>Producto</th>
-                    <th>Cantidad</th>
-                    <th>Costo</th>
-                    <th>Proveedor</th>
-                    <th>Fecha</th>
-                    <th>Estado</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>21</td>
-                    <td>21</td>
-                    <td>21</td>
-                    <td>21</td>
-                    <td>21</td>
-                    <td>21</td>
-                    <td>
-                        <img src="./assets/other.svg" class="table__other">
-                        <img src="./assets/check_p.svg" class="table__check_p">
-                        <img src="./assets/check_n.svg" class="table__check_n">
-                        <img src="./assets/edit.svg" class="table__edit">
-                    </td>
-                </tr>
-                <tr>
-                    <td>21</td>
-                    <td>21</td>
-                    <td>21</td>
-                    <td>21</td>
-                    <td>21</td>
-                    <td>21</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>21</td>
-                    <td>21</td>
-                    <td>21</td>
-                    <td>21</td>
-                    <td>21</td>
-                    <td>21</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>21</td>
-                    <td>21</td>
-                    <td>21</td>
-                    <td>21</td>
-                    <td>21</td>
-                    <td>21</td>
-                    <td></td>
-                </tr>
-            </tbody>
-
-        </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-</div>
-
+</body>
+</html>
