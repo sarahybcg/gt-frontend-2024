@@ -75,7 +75,6 @@
       </div>
     </div>
 
-    <!-- Modal para el formulario de creación de presupuesto -->
     <div v-if="showBudgetForm" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
       <div class="bg-white rounded-[20px] shadow-lg w-[500px] overflow-hidden">
         <BudgetCreationForm @close="showBudgetForm = false" />
