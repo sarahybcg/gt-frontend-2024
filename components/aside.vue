@@ -155,11 +155,11 @@
       { name: 'Reportes', src: '/admin/inventario/4' }
     ] },
     { name: 'Recursos humano', 
-    src: '/admin/recursos-humano', 
+    src: '/admin/recursos-humanos', 
     icon: faUsers,
     submenu: [ 
-    { name: 'Empleados', src: '/admin/inventario/1' },
-    { name: 'Capacitaciones', src: '/admin/inventario/2' },
+      { name: 'Empleados', src: '/admin/recursos-humanos/empleados' },
+      { name: 'Capacitaciones', src: '/admin/inventario/2' },
       { name: 'Nomina', src: '/admin/inventario/3' },
       { name: 'Agenda', src: '/admin/inventario/4' }
     ]  

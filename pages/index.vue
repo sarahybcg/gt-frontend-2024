@@ -4,17 +4,23 @@
       <h1>CALENDARIO</h1> 
       <VCalendario />
     </div> 
+   
     <div>
       <h1>TARJETA CURSO</h1> 
       <tarjetacurso /> 
     </div>
     <div>
+    <div>
+    <h1>tareja empleado</h1>
+      <ProviderCard />
+    </div>
       <h1>TARJETA RATING</h1> 
       <ratingcard />
     </div>
     <div>
       <h1>GRAFICOS</h1>  
     </div>
+    
     <section class="section">
       <h1>GRAFICOS</h1>
       <DoughnutChart />
@@ -76,6 +82,7 @@
 import { defineComponent } from 'vue'
 import VCalendario from '@/components/calendario/VCalendario.vue'
 //cards
+import ProviderCard from '@/components/cards/ProviderCard/providercard.vue'
 import tarjetacurso from '@/components/cards/tarjetacurso/tarjetacurso.vue'
 import ratingcard from '@/components/cards/ratingcard/ratingcard.vue'
 //tabless
@@ -132,6 +139,7 @@ import Datatabletype from '@/components/datatables/Datatabletype/datatabletype.v
  
 export default defineComponent({
   components: {
+    ProviderCard,
     VCalendario,
     tarjetacurso,
     ratingcard,

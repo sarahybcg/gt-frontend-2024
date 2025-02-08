@@ -56,6 +56,7 @@ import Tventas from '@/components/Widgets/TotalVentas/Tventas.vue';
 
 export default defineComponent({
   components: {
+    
     VCalendario,
     tarjetacurso,
     ratingcard,

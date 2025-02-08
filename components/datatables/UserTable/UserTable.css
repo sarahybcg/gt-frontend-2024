@@ -1,28 +1,30 @@
 .table-container {
-    padding: 2rem;
-    background-color: #f8f5f5;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .user-table {
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 1000px;
-    border-collapse: collapse;
-    overflow: hidden;
-  }
-  
-  .user-table th,
-  .user-table td {
-    padding: 1rem;
-    text-align: left;
-    border-bottom: 1px solid #e5e7eb;
-  }
+  padding: 0.5rem; /* Disminuye el padding */
+  background-color: #f8f5f5;
+  min-height: 30vh; /* Disminuye la altura mínima */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1500px; /* Aumenta la anchura máxima */
+}
+
+.user-table {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1500px; /* Aumenta la anchura máxima */
+  border-collapse: collapse;
+  overflow: hidden;
+  padding: 1rem; /* Disminuye el padding */
+}
+
+.user-table th,
+.user-table td {
+  padding: 1rem; /* Disminuye el padding */
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
   
   .user-table th {
     background-color: white;
