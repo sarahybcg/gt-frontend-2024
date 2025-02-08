@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full">
+  <div class="w-full bg-white min-h-screen pt-20">
     <div class="w-full max-w-6xl mx-auto">
       <SubNav module-name="Presupuesto" />
 
@@ -18,7 +18,9 @@
                 <option value="transporte">Transporte</option>
                 <option value="hoteleria">Hotelería</option>
               </select>
-              <ChevronDownIcon class="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+              <ChevronDownIcon
+                class="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"
+              />
             </div>
 
             <div class="relative">
@@ -26,11 +28,13 @@
                 v-model="selectedState"
                 class="appearance-none bg-white pl-4 pr-10 py-2 rounded-lg border border-gray-200 shadow-sm w-48 focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
-                <option value="">Filtrar por Estado</option>
+                <option value="">Filtrar por...</option>
                 <option value="En progreso">En progreso</option>
                 <option value="Casi completo">Casi completo</option>
               </select>
-              <ChevronDownIcon class="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+              <ChevronDownIcon
+                class="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"
+              />
             </div>
           </div>
 
@@ -42,18 +46,40 @@
                 placeholder="Buscar Presupuesto"
                 class="pl-10 pr-4 py-2 rounded-lg border border-gray-200 shadow-sm w-64 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
-              <SearchIcon class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+              <SearchIcon
+                class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"
+              />
             </div>
-            <button class="bg-[#003B73] hover:bg-[#004b8f] text-white rounded-lg font-medium py-2 px-4 shadow-sm">
+            <button
+              @click="showBudgetForm = true"
+              class="bg-[#003B73] hover:bg-[#004b8f] text-white rounded-lg font-medium py-2 px-4 shadow-sm"
+            >
               Crear Presupuesto
             </button>
           </div>
         </div>
+      
+
+        <div class="mt-8">
+          <div class="flex justify-between items-center mb-4">
+              <h2 class="text-xl font-semibold">Transacciones</h2>
+              <div class="flex gap-2">
+          </div>
+        </div>
+          <datatables-BudgetTable
+            :filter="selectedFilter"
+            :state="selectedState"
+            :search="searchQuery"
+          />
+        </div>
       </div>
     </div>
 
-    <div class="w-full mt-6">
-        <datatables-BudgetTable :filter="selectedFilter" :state="selectedState" :search="searchQuery" />
+    <!-- Modal para el formulario de creación de presupuesto -->
+    <div v-if="showBudgetForm" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+      <div class="bg-white rounded-[20px] shadow-lg w-[500px] overflow-hidden">
+        <BudgetCreationForm @close="showBudgetForm = false" />
+      </div>
     </div>
   </div>
 </template>
@@ -61,8 +87,10 @@
 <script setup>
 import { ref } from "vue";
 import { SearchIcon, ChevronDownIcon } from "lucide-vue-next";
+import BudgetCreationForm from "../../../components/forms/FormBudgetCreation/BudgetCreation.vue";
 
-const selectedFilter = ref(""); 
-const selectedState = ref("");  
+const selectedFilter = ref("");
+const selectedState = ref("");
 const searchQuery = ref("");
+const showBudgetForm = ref(false);
 </script>

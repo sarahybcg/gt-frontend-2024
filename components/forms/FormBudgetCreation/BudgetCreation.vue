@@ -5,10 +5,11 @@
     <div class="form-group">
       <label for="department">Departamento</label>
       <select id="department" name="department">
-        <option value="finanzas">Finanzas</option>
-        <option value="marketing">Marketing</option>
         <option value="ventas">Ventas</option>
-        <option value="it">IT</option>
+        <option value="marketing">Marketing</option>
+        <option value="compras">Compras</option>
+        <option value="transporte">Transporte</option>
+        <option value="hoteleria">Hotelería</option>
       </select>
     </div>
 
@@ -37,7 +38,7 @@
     </div>
 
     <div class="form-actions">
-      <button type="button" class="cancel-button">Cancelar</button>
+      <button type="back" class="cancel-button">Cancelar</button>
       <button type="submit" class="save-button">Guardar</button>
     </div>
   </form>
