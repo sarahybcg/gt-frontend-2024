@@ -22,6 +22,7 @@
             </div>
   
             <button
+              @click="showAddExpensesForm = true"
               class="bg-[#003B73] hover:bg-[#004b8f] text-white rounded-lg font-medium py-2 px-4 shadow-sm"
             >
               + Agregar Gasto
@@ -51,14 +52,21 @@
           </div>
         </div>
       </div>
+      <div v-if="showAddExpensesForm" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+      <div class="bg-white rounded-[20px] shadow-lg w-[500px] overflow-hidden">
+        <AddExpenses @close="showAddExpensesForm = false" />
+      </div>
+    </div>
     </div>
   </template>
   
   <script setup>
   import { ref } from "vue";
   import { ChevronDownIcon, DownloadIcon } from "lucide-vue-next";
+  import AddExpenses from "../../../components/forms/FormAddExpenses/AddExpenses.vue";
   
   const selectedCategory = ref("");
   const selectedState = ref("");
   const searchQuery = ref("");
+  const showAddExpensesForm = ref(false);
   </script>

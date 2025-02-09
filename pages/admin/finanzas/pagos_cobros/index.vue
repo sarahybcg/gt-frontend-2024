@@ -32,7 +32,8 @@
                 />
               </div>
               <button
-                class="bg-[#003B73] hover:bg-[#004b8f] text-white rounded-lg font-medium py-2 px-4 shadow-sm"
+              @click="showPaymentRegistrationForm = true"
+              class="bg-[#003B73] hover:bg-[#004b8f] text-white rounded-lg font-medium py-2 px-4 shadow-sm"
               >
                 Registrar Pago
               </button>
@@ -52,13 +53,20 @@
           </div>
         </div>
       </div>
+      <div v-if="showPaymentRegistrationForm" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+      <div class="bg-white rounded-[20px] shadow-lg w-[500px] overflow-hidden">
+        <PaymentRegistration @close="showPaymentRegistrationForm = false" />
+      </div>
+    </div>
     </div>
   </template>
   
   <script setup>
   import { ref } from "vue";
   import { ChevronDownIcon, SearchIcon } from "lucide-vue-next";
+  import PaymentRegistration from "../../../components/forms/FormPaymentRegistration/PaymentRegistration.vue";
   
   const selectedFilter = ref("");
   const searchQuery = ref("");
+  const showPaymentRegistrationForm = ref(false);
   </script>

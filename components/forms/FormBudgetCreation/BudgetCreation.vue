@@ -38,16 +38,21 @@
     </div>
 
     <div class="form-actions">
-      <button type="back" class="cancel-button">Cancelar</button>
-      <button type="submit" class="save-button">Guardar</button>
-    </div>
+        <button type="button" class="cancel-button" @click="handleCancel">Cancelar</button>
+        <button type="submit" class="save-button">Guardar</button>
+      </div>
   </form>
-</div>
+  </div>
 </template>
 
 <script setup lang="ts">
 
+const emit = defineEmits(['close']);
+const handleCancel = () => {
+  emit('close');
+};
 </script>
+
 <style>
 .budget-creation {
   width: 500px; /* Ajusta el ancho */
