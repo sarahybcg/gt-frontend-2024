@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+}
+
+/* Estilos para los botones con imágenes */
+.table_button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: relative; /* Necesario para el posicionamiento del pseudo-elemento */
+}
+
+.table_button img {
+    display: block;
+    transition: transform 0.3s, filter 0.3s; /* Añade una transición */
+}
+
+/* Efecto hover */
+.table_button:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+    filter: brightness(1.2); /* Aumenta el brillo de la imagen */
+}
+
+.table_button:hover::after {
+    content: attr(data-hover); /* Usamos el atributo data-hover para mostrar el mensaje */
+    position: absolute;
+    bottom: 120%; /* Posiciona el mensaje arriba del botón */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    white-space: nowrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    pointer-events: none; /* Elimina la interacción del mouse con el mensaje */
+    font-size: 0.9rem; /* Ajusta el tamaño de la fuente */
+}
+
+.table_button:hover::after {
+    opacity: 1; /* Hace visible el mensaje en hover */
+    transform: translateX(-50%) translateY(-5px); /* Añade un pequeño desplazamiento vertical para la animación */
+}
+
+.table-container { 
+    padding: 2rem; 
+    background-color: #f8f5f5; 
+    min-height: 50vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; /* Alineación a la izquierda para "align-items" en lugar de "left" */ 
+} 
+
+.budget-table { 
+    background: white; 
+    border-radius: 16px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width: 100%; 
+    max-width: 1000px; 
+    border-collapse: collapse; 
+    overflow: hidden; 
+    font-size: 1.1rem; 
+} 
+
+.budget-table th, 
+.budget-table td { 
+    padding: 1.5rem; 
+    text-align: left; 
+    border-bottom: 1px solid #e5e7eb; 
+} 
+
+.budget-table th { 
+    background-color: #f9fafb; 
+    font-weight: 600; 
+    color: #111827; 
+    font-size: 1.2rem; 
+} 
+
+.budget-table td { 
+    color: #374151; 
+    font-weight: 500; 
+} 
+
+.budget-table tbody tr:last-child td { 
+    border-bottom: none; 
+} 
+
+.budget-table tbody tr:hover { 
+    background-color: #f3f4f6; 
+}
+
+@media (max-width: 768px) { 
+    .table-container { 
+        padding: 1rem; 
+    } 
+    .budget-table { 
+        font-size: 1rem; 
+    } 
+    .budget-table th, 
+    .budget-table td { 
+        padding: 1rem; 
+    } 
+}

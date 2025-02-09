@@ -1,9 +1,9 @@
 .Recostos {
   background-color: rgb(255, 255, 255);
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgb(53, 81, 110);
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
   padding: 20px;
-  max-width: 400px;
+  max-width: 1050px;
   margin: 20px auto;
   font-family: Arial, sans-serif;
   color: rgb(51, 51, 51);
