@@ -16,7 +16,7 @@
 
     <div class="flex">
       <!-- <forms-FormBudgetCreation /> -->
-
+      <datatables-ProgressBar></datatables-ProgressBar>
       <datatables-BudgetTable></datatables-BudgetTable>
     </div>
   </div>

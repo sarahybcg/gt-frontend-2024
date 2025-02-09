@@ -1,30 +1,32 @@
 <template>
-
-    <div class="container mx-auto px-4 py-0 "> 
-        <SubNav module-name="Empleados" />
-        
-        <div class="max-w-6xl mx-auto">
-            <div class="flex justify-between items-center mb-2"> 
-                <!-- Buscador -->
-                <div class="flex items-center space-x-2 flex-grow mr-4">
-                    <i class="bx bx-search text-xl text-gray-600"></i>
-                    <input 
-                        type="text" 
-                        placeholder="Buscar empleado" 
-                        class="w-full border border-gray-300 rounded-lg px-2 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
-                    >
-                </div>
-                
-                <button class="bg-blue-800 hover:bg-blue-600 text-white rounded-full font-bold shadow-md py-2 px-6 transition duration-300 ease-in-out whitespace-nowrap">Agregar Empleado</button>
-            
-
-            </div>
-
-            <div class="container mx-auto px-4 ">
-                
-                <datatables-UserTable></datatables-UserTable>
-                
-            </div>
-        </div>
+    <div>
+        <ProgressBar :currentStep="step" :steps="[1, 2, 3]" />
+        <component :is="currentComponent" />
+        <SuccessModal v-if="success" @close="closeModal" />
     </div>
-</template>
+    </template>
+    
+    <script setup>
+  
+    
+  import {ProgressBar} from '../@/components/ProgressBar.vue';
+  import StepOne from '../@/components/ProgressBar/StepOne.vue';
+  import StepTwo from '../@/components/StepTwo.vue';
+  import StepThree from '../@/components/StepThree.vue';
+  import SuccessModal from '../@/components/SuccessModal.vue';
+  
+  const store = useEmployeeStore();
+  const step = computed(() => store.step);
+  const success = computed(() => store.success);
+  
+  const currentComponent = computed(() => {
+    if (step.value === 1) return StepOne;
+    if (step.value === 2) return StepTwo;
+    if (step.value === 3) return StepThree;
+  });
+  
+  function closeModal() {
+    store.setSuccess(false);
+  }
+  </script>
+  
