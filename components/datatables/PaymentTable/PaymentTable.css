@@ -1,44 +1,40 @@
-.table-container {
-    padding: 2rem;
-    background-color: #f8f5f5;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+.payment-table {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%; 
+  min-width: 1100px; 
+  border-collapse: collapse;
+  font-size: 1.1rem;
+}
+
+.payment-table th,
+.payment-table td {
+  padding: 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.payment-table th {
+  background-color: #f9fafb;
+  font-weight: 600;
+  color: #111827;
+  font-size: 1.2rem;
+}
+
+.payment-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+@media (max-width: 768px) {
   .payment-table {
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 1000px;
-    border-collapse: collapse;
-    overflow: hidden;
+    min-width: 100%; 
+    font-size: 1rem;
   }
   
   .payment-table th,
   .payment-table td {
     padding: 1rem;
-    text-align: left;
-    border-bottom: 1px solid #e5e7eb;
+    white-space: nowrap; 
   }
-  
-  .payment-table th {
-    background-color: white;
-    font-weight: 600;
-    color: #111827;
-  }
-  
-  .payment-table td {
-    color: #374151;
-  }
-  
-  .payment-table tbody tr:last-child td {
-    border-bottom: none;
-  }
-  
-  .payment-table tbody tr:hover {
-    background-color: #f9fafb;
-  }
-  
+}
