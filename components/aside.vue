@@ -129,7 +129,7 @@
     src: '/admin/compra', 
     icon: faShoppingCart,
     submenu: [
-      { name: 'Órdenes', src: '/admin/compra/1' },
+      { name: 'Órdenes', src: '/admin/compras/orden' },
       { name: 'Proveedores', src: '/admin/compra/2' },
       { name: 'Historial', src: '/admin/compra/2' }
     ]
