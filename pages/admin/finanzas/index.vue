@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>asdas</h2>
+        <SubNav module-name="Finanzas" />
     </div>
 
 </template>
