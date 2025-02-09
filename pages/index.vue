@@ -34,6 +34,7 @@
     </section>
     <section class="section">
       <h1>TABLAS</h1>
+      <UserTable />
       <BudgetTable />
       <CampaignTable />
       <PaymentTable />

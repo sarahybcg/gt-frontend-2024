@@ -15,10 +15,10 @@
           </div>
   
           <!-- Botón para expandir/contraer barra lateral -->
-          <button
+            <!--<button
             @click="toggleExpand"
             class="text-white bg-[#FF6F61] hover:bg-[#FF6F61] p-0.5 rounded-full mb-4 w-8 h-8 flex items-center justify-center"
-          >
+          
             <svg
               :class="{
                 'rotate-180': !expanded,
@@ -35,7 +35,7 @@
                 clip-rule="evenodd"
               />
             </svg>
-          </button>
+          </button> >-->
   
           <!-- Menú de navegación -->
           <ul class="space-y-2 font-medium">
@@ -126,12 +126,12 @@
   },
   { 
     name: 'Compra', 
-    src: '/admin/compra', 
+    src: '/admin/compras', 
     icon: faShoppingCart,
     submenu: [
-      { name: 'Órdenes', src: '/admin/compra/1' },
-      { name: 'Proveedores', src: '/admin/compra/2' },
-      { name: 'Historial', src: '/admin/compra/2' }
+      { name: 'Órdenes', src: '/admin/compras/orden' },
+      { name: 'Proveedores', src: '/admin/compras/historial' },
+      { name: 'Historial', src: '/admin/compras/proveedores' }
     ]
   },
   { 
@@ -155,11 +155,11 @@
       { name: 'Reportes', src: '/admin/inventario/4' }
     ] },
     { name: 'Recursos humano', 
-    src: '/admin/recursoshumano', 
+    src: '/admin/recursos-humanos', 
     icon: faUsers,
     submenu: [ 
-    { name: 'Empleados', src: '/admin/inventario/1' },
-    { name: 'Capacitaciones', src: '/admin/recursoshumano/capacitaciones' },
+    { name: 'Empleados', src: '/admin/recursos-humanos/empleados' },
+    { name: 'Capacitaciones', src: '/admin/recursos-humanos/capacitaciones' },
       { name: 'Nomina', src: '/admin/inventario/3' },
       { name: 'Agenda', src: '/admin/inventario/4' }
     ]  
