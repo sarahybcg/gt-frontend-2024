@@ -1,18 +1,21 @@
 .create-campaign {
-  width: 500px; /* Ajusta el ancho */
+  width: 100%;
+  max-width: 500px; 
   margin: 0 auto;
-  padding: 20px; /* Ajusta el padding */
+  padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f5f5f5;
+  box-sizing: border-box;
+  overflow: hidden; 
 }
 
 .create-campaign label {
   display: block;
   margin-bottom: 5px;
-  font-family: 'Lobster', sans-serif; 
-  font-size: 14px; 
-  color: #000000; 
+  font-family: 'Lobster', sans-serif;
+  font-size: 14px;
+  color: #000000;
 }
 
 .create-campaign input,
@@ -24,11 +27,13 @@
   border: 1px solid #ffffff;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgb(95, 82, 82);
+  box-sizing: border-box;
 }
 
 .create-campaign .period-group {
   display: flex;
   gap: 10px;
+  width: 100%;
 }
 
 .create-campaign .period-group div {
@@ -43,19 +48,19 @@
   border-radius: 10px;
   box-shadow: 0 2px 4px rgb(90, 82, 82);
   cursor: pointer;
+  width: 100%;
 }
 
 .create-campaign .form-actions {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap; 
 }
 
 .create-campaign .form-actions button {
-  margin-right: 10px;
-}
-
-.create-campaign .form-actions button:last-child {
-  margin-right: 0;
+  flex: 1;
+  margin: 5px;
+  min-width: 120px; 
 }
 
 .create-campaign .form-actions button:first-child {
@@ -70,4 +75,5 @@
   border: 1px solid #ffffff;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgb(95, 82, 82);
+  box-sizing: border-box;
 }
