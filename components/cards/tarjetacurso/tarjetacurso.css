@@ -30,7 +30,7 @@
   padding: 6px 12px;
   border-radius: 16px;
   font-size: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
 }
 
 .course-type {
@@ -50,7 +50,7 @@
   border-radius: 16px;
   font-size: 15px;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
   text-align: center;
 }
@@ -58,3 +58,18 @@
 .details-btn:hover {
   background: #f8f8f8;
 }
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.course-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start ;
+  gap: 20px;
+  margin: 12px;
+}
+
