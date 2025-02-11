@@ -135,6 +135,14 @@
     ]
   },
   { 
+    name: 'Ordenes de Compra', 
+    src: '/admin/orders/', 
+    icon: faShoppingCart,
+    submenu: [
+      { name: 'Órdenes', src: '/admin/orders/' },
+    ]
+  },
+  { 
     name: 'Inventario', 
     src: '/admin/inventario', 
     icon: faCube,
