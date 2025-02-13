@@ -48,7 +48,7 @@
             <li v-for="item in list" :key="item.name" class="group">
               <NuxtLink :to="item.src" class="flex items-center p-2 rounded-lg text-white hover:bg-[#9DA8BB] group">
                 <!-- Icono de FontAwesome -->
-                <FontAwesomeIcon :icon="item.icon" class="w-5 h-5 transition duration-75 text-gray-400 group-hover:text-white" />
+                <FontAwesomeIcon :icon="item.icon" class="w-5 h-5 transition duration-75 text-white group-hover:text-white" />
   
                 <!-- Título y subtítulo (solo visible si expandido) -->
                 <span v-show="expanded" class="ms-3 overflow-hidden text-ellipsis whitespace-nowrap">
