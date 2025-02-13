@@ -151,8 +151,8 @@
     icon: faShoppingBag,
     submenu: [
       { name: 'Gestión de Ventas', src: '/admin/ventas/gestionventas' },
-      { name: 'Campañas', src: '/admin/inventario/1' },
-      { name: 'Gestion de Leads', src: '/admin/inventario/2' },
+      { name: 'Campañas', src: '/admin/ventas/campanas' },
+      { name: 'Gestion de Leads', src: '/admin/ventas/gestion_leads' },
       { name: 'Analisis', src: '/admin/inventario/3' },
       { name: 'Reportes', src: '/admin/inventario/4' }
     ] },
