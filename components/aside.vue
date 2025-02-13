@@ -36,6 +36,11 @@
               />
             </svg>
           </button> >-->
+
+          <!-- Contenedor del logo -->
+      <div class="flex justify-center items-center w-full mb-6">
+        <img src="assets/logo.svg" alt="Logo" class="w-full h-auto max-w-32" />
+      </div>
   
           <!-- Menú de navegación -->
           <ul class="space-y-2 font-medium">
