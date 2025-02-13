@@ -120,7 +120,8 @@
       { name: 'Presupuestos', src: '/admin/finanzas/presupuesto' }, 
       { name: 'Control de Gastos', src: '/admin/finanzas/control_gasto' }, 
       { name: 'Pagos y Cobros', src: '/admin/finanzas/pagos_cobros' },
-      { name: 'Analisis', src: '/admin/finanzas/analisis' },
+      { name: 'Libro diario', src: '/admin/finanzas/analisis' },
+      { name: 'Libro mayor' },
       { name: 'Reportes', src: '/admin/finanzas/reporte' }
     ]
   },
