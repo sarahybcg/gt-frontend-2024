@@ -136,8 +136,8 @@
     icon: faShoppingCart,
     submenu: [
       { name: 'Órdenes', src: '/admin/compras/orden' },
-      { name: 'Proveedores', src: '/admin/compras/historial' },
-      { name: 'Historial', src: '/admin/compras/proveedores' }
+      { name: 'Proveedores', src: '/admin/compras/proveedores'},
+      { name: 'Historial', src: '/admin/compras/historial' }
     ]
   },
   { 
