@@ -34,6 +34,7 @@
         <option value="Efectivo">Efectivo</option>
         <option value="Tarjeta">Tarjeta</option>
         <option value="Transferencia">Transferencia</option>
+        <option value="Pago Movil">Pago Móvil</option>
       </select>
     </div>
     <button type="button" @click="showAjustesModal = true" class="px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
@@ -45,6 +46,7 @@
     :servicios-individuales="serviciosIndividuales"
     :ajustes="ajustes"
     :total="calcularTotal"
+    :metodoPago="metodoPago"
     @eliminar-ajuste="eliminarAjuste"
     />
     <div class="flex justify-end space-x-4">

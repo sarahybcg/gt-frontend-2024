@@ -32,6 +32,8 @@
         </p>
       </div>
     </template>
+   <p class="font-semibold mt-2">Método de Pago: </p>
+   <p>{{ metodoPago }}</p>
     <p class="font-bold mt-4">Total: bs. {{ total }}</p>
   </div>
 </template>
@@ -44,6 +46,7 @@ defineProps<{
   serviciosIndividuales: ServicioIndividual[];
   ajustes: Ajuste[];
   total: number;
+  metodoPago: string;
 }>();
 
 const emit = defineEmits<{
