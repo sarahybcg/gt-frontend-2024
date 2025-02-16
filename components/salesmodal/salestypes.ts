@@ -5,25 +5,23 @@ export type Servicio = "Hotel" | "Atracciones" | "Restaurante" | "Transporte";
 export interface PaqueteTuristico {
   id: string;
   nombre: string;
-  cantidadPersonas: number; 
   precio: number;
-  precioConIVA: number;
 }
 
 export interface ServicioIndividual {
   servicio: Servicio;
   cantidad: number;
   precioUnitario: number;
-  precioConIVA: number;
 }
 
-export type TipoAjuste = "Descuento"; 
+export type TipoAjuste = "Descuento" | "Impuesto" | "Recargo";
 
 export interface Ajuste {
-  tipo: TipoAjuste; 
+  tipo: TipoAjuste;
   tipoValor: 'porcentaje' | 'monto';
   valor: number;
-  descripcion?: string; 
+  aplicarA: "Paquete" | "Servicio";
+  descripcion?: string;
 }
 
 export interface Venta {
