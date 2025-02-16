@@ -5,7 +5,7 @@ export type Servicio = "Hotel" | "Atracciones" | "Restaurante" | "Transporte";
 export interface PaqueteTuristico {
   id: string;
   nombre: string;
-  cantidadPersonas: number; 
+  cantidadPaquetes: number; 
   precio: number;
   precioConIVA: number;
 }

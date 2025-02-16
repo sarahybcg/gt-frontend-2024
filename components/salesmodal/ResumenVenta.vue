@@ -4,14 +4,14 @@
     <template v-if="paqueteTuristico">
       <div>
         <p class="font-semibold mt-2">Paquete Turístico:</p>
-        <p>{{ paqueteTuristico.nombre }}: {{ paqueteTuristico.cantidadPersonas }} x bs. {{ paqueteTuristico.precio }} (+ IVA) = bs. {{ paqueteTuristico.cantidadPersonas * paqueteTuristico.precioConIVA }}</p>
+        <p>{{ paqueteTuristico.nombre }}: {{ paqueteTuristico.cantidadPaquetes }} x bs. {{ paqueteTuristico.precio }} (+ IVA 16%) = bs. {{ paqueteTuristico.cantidadPaquetes * paqueteTuristico.precioConIVA }}</p>
       </div>
     </template>
     <template v-if="serviciosIndividuales.length > 0">
       <div>
         <p class="font-semibold mt-2">Servicios Individuales:</p>
         <p v-for="(servicio, index) in serviciosIndividuales" :key="index">
-          {{ servicio.servicio }}: {{ servicio.cantidad }} x bs. {{ servicio.precioUnitario }} (+ IVA)  = bs. {{ servicio.cantidad * servicio.precioConIVA }}
+          {{ servicio.servicio }}: {{ servicio.cantidad }} x bs. {{ servicio.precioUnitario }} (+ IVA 16%)  = bs. {{ servicio.cantidad * servicio.precioConIVA }}
         </p>
       </div>
     </template>

@@ -117,7 +117,7 @@ const calcularTotal = computed(() => {
   let total = 0;
 
   if (paqueteTuristico.value) {
-    total += paqueteTuristico.value.cantidadPersonas * paqueteTuristico.value.precioConIVA;
+    total += paqueteTuristico.value.cantidadPaquetes * paqueteTuristico.value.precioConIVA;
   }
 
   serviciosIndividuales.value.forEach(servicio => {

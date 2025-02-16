@@ -16,14 +16,14 @@
         </select>
       </div>
       <div class="mt-4">
-        <label for="cantidadPersonas" class="block text-sm font-medium text-gray-700">Cantidad de Personas</label>
+        <label for="cantidadPaquetes" class="block text-sm font-medium text-gray-700">Cantidad de Paquetes</label>
         <input
-          id="cantidadPersonas"
+          id="cantidadPaquetes"
           type="number"
-          v-model="cantidadPersonas"
+          v-model="cantidadPaquetes"
           placeholder="Cantidad"
           min="1"
-          @input="onCantidadPersonasChange"
+          @input="onCantidadPaquetesChange"
           class="mt-1 block w-20 rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
         />
       </div>
@@ -46,7 +46,7 @@
         </div>
         <div v-for="(servicio, index) in selectedServicios" :key="index">
           <label :for="'cantidad-' + servicio" class="block text-sm font-medium text-gray-700">
-            Cantidad de {{ servicio }}
+            Cantidad de Personas para {{ servicio }}
           </label>
           <input
             :id="'cantidad-' + servicio"
@@ -72,14 +72,14 @@ const props = defineProps<{
 }>();
 
 const emit = defineEmits<{
-  (e: 'paquete-select', paquete: PaqueteTuristico | null, cantidadPersonas: number): void;
+  (e: 'paquete-select', paquete: PaqueteTuristico | null, cantidadPaquetes: number): void;
   (e: 'servicios-select', servicios: ServicioIndividual[]): void;
   (e: 'clear-selection'): void;
 }>();
 
 const paquetesMock: PaqueteTuristico[] = [
-  { id: '1', nombre: 'Paquete Básico', cantidadPersonas: 1, precio: 1000, precioConIVA: 1160 },
-  { id: '2', nombre: 'Paquete Premium', cantidadPersonas: 1, precio: 2000, precioConIVA: 2320 },
+  { id: '1', nombre: 'Paquete Básico Individual', cantidadPaquetes: 1, precio: 1000, precioConIVA: 1160 },
+  { id: '2', nombre: 'Paquete Premium Individual', cantidadPaquetes: 1, precio: 2000, precioConIVA: 2320 },
 ];
 
 const serviciosMock: Servicio[] = ['Hotel', 'Atracciones', 'Restaurante', 'Transporte'];
@@ -98,12 +98,12 @@ const cantidadesServicios = ref<Record<Servicio, number>>({
   Restaurante: 1,
   Transporte: 1,
 });
-const cantidadPersonas = ref(1);
+const cantidadPaquetes = ref(1);
 
 watch(() => props.tipoVenta, () => {
   selectedPaquete.value = '';
   selectedServicios.value = [];
-  cantidadPersonas.value = 1;
+  cantidadPaquetes.value = 1;
   cantidadesServicios.value = { Hotel: 1, Atracciones: 1, Restaurante: 1, Transporte: 1 };
 
   emit('clear-selection');
@@ -121,15 +121,15 @@ const onPaqueteSelect = () => {
       ...paquete,
       precio: paquete.precio,
       precioConIVA: calcularPrecioConIVA(paquete.precio),
-      cantidadPersonas: cantidadPersonas.value,
+      cantidadPaquetes: cantidadPaquetes.value,
     };
-    emit('paquete-select', paqueteConIVA, cantidadPersonas.value);
+    emit('paquete-select', paqueteConIVA, cantidadPaquetes.value);
   } else {
-    emit('paquete-select', null, cantidadPersonas.value);
+    emit('paquete-select', null, cantidadPaquetes.value);
   }
 };
 
-const onCantidadPersonasChange = () => {
+const onCantidadPaquetesChange = () => {
   if (selectedPaquete.value) {
     onPaqueteSelect();
   }
