@@ -7,12 +7,6 @@
     </div>
 </template>
 
-<script>
-import { defineComponent } from "vue";
-import SuppliersTable from "@/components/datatables/SuppliersTable/SuppliersTable.vue"; 
-
-export default defineComponent({
-    name: "Proveedores",
-    components: { SuppliersTable },
-});
+<script setup> 
+  import SuppliersTable from '../../../../components/datatables/SuppliersTable/SuppliersTable.vue';
 </script>

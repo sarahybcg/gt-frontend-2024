@@ -145,7 +145,7 @@ const list = ref([
   src: '/admin/inventario', 
   icon: faCube,
   submenu: [
-    { name: 'Gestión de productos', src: '/admin/inventario/1' }, 
+    { name: 'Gestión de productos', src: '/admin/inventario/productos' }, 
     { name: 'Costos', src: '/admin/inventario/2' },
     { name: 'Movimientos Históricos', src: '/admin/inventario/2' },
     { name: 'Proyecciones', src: '/admin/inventario/2' }
