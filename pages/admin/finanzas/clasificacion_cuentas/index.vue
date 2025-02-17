@@ -1,7 +1,7 @@
 <template>
-    <div class="min-h-screen bg-white pt-20">
+    <div class="min-h-screen bg-white pt-5">
       <div class="w-full max-w-6xl mx-auto bg-white">
-        <SubNav module-name="Clasificación de Cuentas" />
+        <SubNav module-name="Reporte" />
         <div class="bg-white p-6 rounded-xl shadow-md mt-8 flex flex-col">
           <!-- Contenedor de la tabla -->
           <div class="overflow-auto w-full h-full bg-white">

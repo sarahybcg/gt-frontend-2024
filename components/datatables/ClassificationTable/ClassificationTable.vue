@@ -1,60 +1,67 @@
 <template>
-  <button @click="generateCSV" class="bg-[#003B73] hover:bg-[#004b8f] text-white rounded-lg font-medium py-2 px-4 shadow-sm">
-    Generar Reporte CSV
-  </button>
   <div class="p-8 bg-gray-100 min-h-screen bg-white flex justify-center items-center">
-    <table class="w-full bg-white rounded-lg shadow-lg border-collapse text-lg">
-      <thead>
-        <tr>
-          <th class="py-6 px-8 text-left text-gray-700 font-semibold bg-gray-200 rounded-tl-lg">Cuentas</th>
-          <th class="py-6 px-8 text-left text-gray-700 font-semibold bg-gray-200">Saldos expresados en Bolívares</th>
-          <th class="py-6 px-8 text-left text-gray-700 font-semibold bg-gray-200">Nominales</th>
-          <th class="py-6 px-8 text-left text-gray-700 font-semibold bg-gray-200"></th>
-          <th class="py-6 px-8 text-left text-gray-700 font-semibold bg-gray-200">Reales</th>
-          <th class="py-6 px-8 text-left text-gray-700 font-semibold bg-gray-200 rounded-tr-lg"></th>
-        </tr>
-        <tr>
-          <th class="py-6 px-8 text-left text-gray-700 font-semibold bg-gray-100"></th>
-          <th class="py-6 px-8 text-left text-gray-700 font-semibold bg-gray-100"></th>
-          <th class="py-6 px-8 text-left text-gray-700 font-semibold bg-gray-100">Deudor</th>
-          <th class="py-6 px-8 text-left text-gray-700 font-semibold bg-gray-100">Acreedor</th>
-          <th class="py-6 px-8 text-left text-gray-700 font-semibold bg-gray-100">Deudor</th>
-          <th class="py-6 px-8 text-left text-gray-700 font-semibold bg-gray-100">Acreedor</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="(cuenta, index) in cuentas" :key="index" class="hover:bg-gray-50">
-          <td class="py-6 px-8 text-left">{{ cuenta.nombre }}</td>
-          <td class="py-6 px-8 text-left">{{ cuenta.saldo }}</td>
-          <td class="py-6 px-8 text-left">{{ cuenta.nominalDeudor }}</td>
-          <td class="py-6 px-8 text-left">{{ cuenta.nominalAcreedor }}</td>
-          <td class="py-6 px-8 text-left">{{ cuenta.realDeudor }}</td>
-          <td class="py-6 px-8 text-left">{{ cuenta.realAcreedor }}</td>
-        </tr>
-        <tr class="font-semibold bg-gray-200">
-          <td class="py-6 px-8 text-left">Subtotales</td>
-          <td class="py-6 px-8 text-left">{{ subtotales.saldos }}</td>
-          <td class="py-6 px-8 text-left">{{ subtotales.nominalDeudor }}</td>
-          <td class="py-6 px-8 text-left">{{ subtotales.nominalAcreedor }}</td>
-          <td class="py-6 px-8 text-left">{{ subtotales.realDeudor }}</td>
-          <td class="py-6 px-8 text-left">{{ subtotales.realAcreedor }}</td>
-        </tr>
-        <tr class="font-semibold bg-gray-200">
-          <td class="py-6 px-8 text-left">Resultado del ejercicio</td>
-          <td class="py-6 px-8 text-left">{{ resultadoEjercicio }}</td>
-          <td colspan="2" class="py-6 px-8"></td>
-          <td colspan="2" class="py-6 px-8"></td>
-        </tr>
-        <tr class="font-semibold bg-gray-200">
-          <td class="py-6 px-8 text-left">Totales</td>
-          <td class="py-6 px-8 text-left">{{ totales.saldos }}</td>
-          <td class="py-6 px-8 text-left">{{ totales.nominalDeudor }}</td>
-          <td class="py-6 px-8 text-left">{{ totales.nominalAcreedor }}</td>
-          <td class="py-6 px-8 text-left">{{ totales.realDeudor }}</td>
-          <td class="py-6 px-8 text-left">{{ totales.realAcreedor }}</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="w-full max-w-7xl">
+      <!-- Button Container -->
+      <div class="flex justify-end mb-4">
+        <button @click="generateCSV" class="bg-[#003B73] hover:bg-[#004b8f] text-white rounded-lg font-medium py-2 px-4 shadow-sm">
+          Generar Reporte CSV
+        </button>
+      </div>
+
+      <!-- Table -->
+      <table class="w-full bg-white rounded-lg shadow-lg border-collapse text-lg">
+        <thead>
+          <tr>
+            <th class="py-6 px-8 text-left text-gray-700 font-semibold bg-gray-200 rounded-tl-lg">Cuentas</th>
+            <th class="py-6 px-8 text-left text-gray-700 font-semibold bg-gray-200">Saldos expresados en Bolívares</th>
+            <th class="py-6 px-8 text-left text-gray-700 font-semibold bg-gray-200">Nominales</th>
+            <th class="py-6 px-8 text-left text-gray-700 font-semibold bg-gray-200"></th>
+            <th class="py-6 px-8 text-left text-gray-700 font-semibold bg-gray-200">Reales</th>
+            <th class="py-6 px-8 text-left text-gray-700 font-semibold bg-gray-200 rounded-tr-lg"></th>
+          </tr>
+          <tr>
+            <th class="py-6 px-8 text-left text-gray-700 font-semibold bg-gray-100"></th>
+            <th class="py-6 px-8 text-left text-gray-700 font-semibold bg-gray-100"></th>
+            <th class="py-6 px-8 text-left text-gray-700 font-semibold bg-gray-100">Deudor</th>
+            <th class="py-6 px-8 text-left text-gray-700 font-semibold bg-gray-100">Acreedor</th>
+            <th class="py-6 px-8 text-left text-gray-700 font-semibold bg-gray-100">Deudor</th>
+            <th class="py-6 px-8 text-left text-gray-700 font-semibold bg-gray-100">Acreedor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="(cuenta, index) in cuentas" :key="index" class="hover:bg-gray-50">
+            <td class="py-6 px-8 text-left">{{ cuenta.nombre }}</td>
+            <td class="py-6 px-8 text-left">{{ cuenta.saldo }}</td>
+            <td class="py-6 px-8 text-left">{{ cuenta.nominalDeudor }}</td>
+            <td class="py-6 px-8 text-left">{{ cuenta.nominalAcreedor }}</td>
+            <td class="py-6 px-8 text-left">{{ cuenta.realDeudor }}</td>
+            <td class="py-6 px-8 text-left">{{ cuenta.realAcreedor }}</td>
+          </tr>
+          <tr class="font-semibold bg-gray-100">
+            <td class="py-6 px-8 text-left">Subtotales</td>
+            <td class="py-6 px-8 text-left">{{ subtotales.saldos }}</td>
+            <td class="py-6 px-8 text-left">{{ subtotales.nominalDeudor }}</td>
+            <td class="py-6 px-8 text-left">{{ subtotales.nominalAcreedor }}</td>
+            <td class="py-6 px-8 text-left">{{ subtotales.realDeudor }}</td>
+            <td class="py-6 px-8 text-left">{{ subtotales.realAcreedor }}</td>
+          </tr>
+          <tr class="font-semibold bg-gray-100">
+            <td class="py-6 px-8 text-left">Resultado del ejercicio</td>
+            <td class="py-6 px-8 text-left">{{ resultadoEjercicio }}</td>
+            <td colspan="2" class="py-6 px-8"></td>
+            <td colspan="2" class="py-6 px-8"></td>
+          </tr>
+          <tr class="font-semibold bg-gray-100">
+            <td class="py-6 px-8 text-left">Totales</td>
+            <td class="py-6 px-8 text-left">{{ totales.saldos }}</td>
+            <td class="py-6 px-8 text-left">{{ totales.nominalDeudor }}</td>
+            <td class="py-6 px-8 text-left">{{ totales.nominalAcreedor }}</td>
+            <td class="py-6 px-8 text-left">{{ totales.realDeudor }}</td>
+            <td class="py-6 px-8 text-left">{{ totales.realAcreedor }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </template>
 
@@ -152,13 +159,12 @@ export default {
         this.totales.realAcreedor
       ]);
 
-      const csvContent = rows.map(row => row.join(',')).join('\n');
-      
-      // Crear un archivo CSV y descargarlo
-      const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+      const csvContent = 'data:text/csv;charset=utf-8,' + rows.map(row => row.join(',')).join('\n');
+      const encodedUri = encodeURI(csvContent);
       const link = document.createElement('a');
-      link.href = URL.createObjectURL(blob);
-      link.download = 'reporte.csv';
+      link.setAttribute('href', encodedUri);
+      link.setAttribute('download', 'reporte_financiero.csv');
+      document.body.appendChild(link);
       link.click();
     }
   }
@@ -166,26 +172,18 @@ export default {
 </script>
 
 <style scoped>
-table,
-table th,
-table td {
-  outline: none; 
-  border: none;
+table {
+  border-spacing: 0;
 }
-
-table tbody tr {
-  user-select: none;
+th, td {
+  padding: 12px 16px;
+  border: 1px solid #d1d1d1;
+  text-align: left;
 }
-
-table tbody tr:nth-child(even) {
-  background-color: #fff;
-}
-
-table tbody tr:hover {
-  background-color: transparent !important;
-}
-
-input, button {
-  outline: none;
+th {
+  background-color: #f9f9f9;
 }
 </style>
+
+
+ 

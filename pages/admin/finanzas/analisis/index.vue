@@ -1,9 +1,9 @@
 <template>
-    <div class="p-6 bg-gray-50">
+  <div class="min-h-screen bg-white pt-5">
+    <div class="w-full max-w-6xl mx-auto bg-white">
       <SubNav module-name="Libro diario" />
-  
-      <div class="bg-white p-4 rounded-2xl mb-6">
-        <h3 class="text-lg font-semibold mb-4">Filtros</h3>
+      <div class="bg-white p-6 rounded-xl shadow-md mt-8 flex flex-col">
+      <div class="bg-white p-4 rounded-2xl mb-6"> 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div>
             <label class="block text-sm font-medium  mb-1">Cliente</label>
@@ -35,12 +35,15 @@
           </div>
         </div>
       </div>
-  
+      <div class="overflow-auto w-full h-full bg-white">
       <AccountingTable
         :entries="filteredEntries"
         @generate-report="generateReport"
       />
+      </div>
     </div>
+  </div>
+</div> 
   </template>
   
   

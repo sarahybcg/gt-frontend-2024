@@ -79,7 +79,7 @@
   </div>
 </template>
 
-<script lang="ts"> 
+<script  > 
 import { defineComponent } from 'vue'
 import VCalendario from '@/components/calendario/VCalendario.vue'
 //cards
